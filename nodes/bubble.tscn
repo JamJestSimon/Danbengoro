@@ -1,0 +1,16 @@
+[gd_scene load_steps=3 format=3 uid="uid://ccy2xwo26w1a5"]
+
+[ext_resource type="Shape2D" uid="uid://gil2menjqita" path="res://shapes/new_rectangle_shape_2d.tres" id="1_spdwa"]
+
+[sub_resource type="PlaceholderTexture2D" id="PlaceholderTexture2D_6xlif"]
+
+[node name="Bubble" type="Sprite2D"]
+position = Vector2(241, 311)
+scale = Vector2(30, 30)
+texture = SubResource("PlaceholderTexture2D_6xlif")
+metadata/shootable = true
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+shape = ExtResource("1_spdwa")

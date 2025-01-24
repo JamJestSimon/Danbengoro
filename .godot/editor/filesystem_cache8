@@ -1,0 +1,11 @@
+ea4bc82a6ad023ab7ee23ee620429895
+::res://::1737746832
+icon.svg::CompressedTexture2D::2595834816942553984::1737744680::1737744725::1::::<><>::
+::res://nodes/::1737746804
+::res://scenes/::1737746640
+node_2d.tscn::PackedScene::8171484797330291727::1737746640::0::1::::<><>::res://scripts/crosshair.gd<>uid://cejw50jb5grlf::::res://shapes/new_circle_shape_2d.tres<>uid://gil2menjqita::::res://shapes/new_rectangle_shape_2d.tres
+::res://scripts/::1737746640
+crosshair.gd::GDScript::-1::1737746640::0::1::::<>Sprite2D<>::
+::res://shapes/::1737746559
+new_circle_shape_2d.tres::CircleShape2D::5073566816455653423::1737746521::0::1::::<><>::
+new_rectangle_shape_2d.tres::RectangleShape2D::438364824279281494::1737746559::0::1::::<><>::

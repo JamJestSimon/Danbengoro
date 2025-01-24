@@ -1,0 +1,10 @@
+Label
+TextureRect
+VBoxContainer
+CanvasLayer
+Node
+Control
+CollisionShape2D
+Area2D
+Sprite2D
+Node2D

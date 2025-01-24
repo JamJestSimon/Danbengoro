@@ -1,3 +1,29 @@
-[gd_scene format=3 uid="uid://doolfp234vakd"]
+[gd_scene load_steps=4 format=3 uid="uid://doolfp234vakd"]
+
+[ext_resource type="Script" path="res://scripts/bullet_chamber.gd" id="1_r7smc"]
+[ext_resource type="PackedScene" uid="uid://cr4mqugse8mpm" path="res://nodes/crosshair.tscn" id="1_t1ep3"]
+[ext_resource type="PackedScene" uid="uid://ccy2xwo26w1a5" path="res://nodes/bubble.tscn" id="2_0qirr"]
 
 [node name="Node2D" type="Node2D"]
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="VBoxContainer" type="VBoxContainer" parent="CanvasLayer"]
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+grow_vertical = 0
+mouse_filter = 2
+script = ExtResource("1_r7smc")
+truths = Array[String](["Truth 1", "Truth 2", "Truth 3"])
+
+[node name="Crosshair" parent="." instance=ExtResource("1_t1ep3")]
+
+[node name="Bubble" parent="." instance=ExtResource("2_0qirr")]
+
+[node name="Bubble2" parent="." instance=ExtResource("2_0qirr")]
+position = Vector2(400, 400)
+metadata/shootable = false
+
+[node name="Bubble3" parent="." instance=ExtResource("2_0qirr")]
+position = Vector2(600, 600)
