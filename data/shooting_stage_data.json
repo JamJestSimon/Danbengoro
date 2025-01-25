@@ -12,225 +12,519 @@
 						"character": "B",
 						"text": "What a tragic story…",
 						"truth": "",
-						"shootable": "false",
 						"truth_acquisition": "",
-						"time": "1"
+						"shootable": "false",
+						"time": "1",
+						"route": {
+							"type": "rectangle",
+							"width": "124",
+							"height": "40",
+							"speed": "56",
+							"direction": "1"
+						},
+						"start_position": {
+							"x": "658",
+							"y": "362"
+						}
 					},
 					{
 						"character": "B",
 						"text": "He was my friend.",
 						"truth": "",
+						"truth_acquisition": "Baron's friend",
 						"shootable": "true",
-						"truth_acquisition": "",
-						"time": "1"
+						"time": "1",
+						"route": {
+							"type": "circle",
+							"size": "140",
+							"speed": "48",
+							"direction": "1"
+						},
+						"start_position": {
+							"x": "774",
+							"y": "293"
+						}
 					},
 					{
 						"character": "B",
 						"text": "A fatherly figure.",
 						"truth": "",
-						"shootable": "false",
 						"truth_acquisition": "",
-						"time": "1"
+						"shootable": "false",
+						"time": "1",
+						"route": {
+							"type": "rectangle",
+							"width": "99",
+							"height": "61",
+							"speed": "68",
+							"direction": "1"
+						},
+						"start_position": {
+							"x": "986",
+							"y": "752"
+						}
 					},
 					{
 						"character": "B",
 						"text": "That gentleman hired me as a language tutor for his daughters.",
 						"truth": "",
-						"shootable": "false",
 						"truth_acquisition": "",
-						"time": "5"
+						"shootable": "false",
+						"time": "5",
+						"route": {
+							"type": "circle",
+							"size": "156",
+							"speed": "44",
+							"direction": "-1"
+						},
+						"start_position": {
+							"x": "736",
+							"y": "639"
+						}
 					},
 					{
 						"character": "S",
 						"text": "Daughters?",
 						"truth": "",
-						"shootable": "false",
 						"truth_acquisition": "",
-						"time": "1"
+						"shootable": "false",
+						"time": "1",
+						"route": {
+							"type": "rectangle",
+							"width": "294",
+							"height": "74",
+							"speed": "57",
+							"direction": "1"
+						},
+						"start_position": {
+							"x": "993",
+							"y": "673"
+						}
 					},
 					{
 						"character": "I",
 						"text": "Never heard of 'em.",
 						"truth": "",
-						"shootable": "false",
 						"truth_acquisition": "",
-						"time": "2"
+						"shootable": "false",
+						"time": "2",
+						"route": {
+							"type": "circle",
+							"size": "287",
+							"speed": "47",
+							"direction": "1"
+						},
+						"start_position": {
+							"x": "1018",
+							"y": "738"
+						}
 					},
 					{
 						"character": "B",
 						"text": "Two of them married, one betrothed to a noble.",
 						"truth": "",
-						"shootable": "false",
 						"truth_acquisition": "",
-						"time": "3"
+						"shootable": "false",
+						"time": "3",
+						"route": {
+							"type": "rectangle",
+							"width": "271",
+							"height": "245",
+							"speed": "63",
+							"direction": "-1"
+						},
+						"start_position": {
+							"x": "943",
+							"y": "565"
+						}
 					},
 					{
 						"character": "B",
 						"text": "My little Aphanasia…",
 						"truth": "",
-						"shootable": "false",
 						"truth_acquisition": "",
-						"time": "1"
+						"shootable": "false",
+						"time": "1",
+						"route": {
+							"type": "circle",
+							"size": "117",
+							"speed": "55",
+							"direction": "1"
+						},
+						"start_position": {
+							"x": "949",
+							"y": "608"
+						}
 					},
 					{
 						"character": "R",
 						"text": "That's odd…",
 						"truth": "",
-						"shootable": "false",
 						"truth_acquisition": "",
-						"time": "1"
+						"shootable": "false",
+						"time": "1",
+						"route": {
+							"type": "rectangle",
+							"width": "287",
+							"height": "237",
+							"speed": "65",
+							"direction": "1"
+						},
+						"start_position": {
+							"x": "1274",
+							"y": "389"
+						}
 					},
 					{
 						"character": "B",
 						"text": "When we were preparing to go…",
 						"truth": "",
-						"shootable": "false",
 						"truth_acquisition": "",
-						"time": "3"
+						"shootable": "false",
+						"time": "3",
+						"route": {
+							"type": "circle",
+							"size": "244",
+							"speed": "56",
+							"direction": "1"
+						},
+						"start_position": {
+							"x": "1201",
+							"y": "557"
+						}
 					},
 					{
 						"character": "B",
 						"text": "I asked her father to let her leave with us.",
 						"truth": "",
-						"shootable": "false",
 						"truth_acquisition": "",
-						"time": "3"
+						"shootable": "false",
+						"time": "3",
+						"route": {
+							"type": "rectangle",
+							"width": "66",
+							"height": "89",
+							"speed": "56",
+							"direction": "1"
+						},
+						"start_position": {
+							"x": "669",
+							"y": "759"
+						}
 					},
 					{
 						"character": "R",
 						"text": "What?",
 						"truth": "",
-						"shootable": "false",
 						"truth_acquisition": "",
-						"time": "1"
+						"shootable": "false",
+						"time": "1",
+						"route": {
+							"type": "circle",
+							"size": "70",
+							"speed": "42",
+							"direction": "1"
+						},
+						"start_position": {
+							"x": "669",
+							"y": "759"
+						}
 					},
 					{
 						"character": "R",
 						"text": "But we were both there!",
 						"truth": "",
+						"truth_acquisition": "Ryumin's account",
 						"shootable": "true",
-						"truth_acquisition": "",
-						"time": "2"
+						"time": "2",
+						"route": {
+							"type": "rectangle",
+							"width": "210",
+							"height": "212",
+							"speed": "64",
+							"direction": "-1"
+						},
+						"start_position": {
+							"x": "1218",
+							"y": "611"
+						}
 					},
 					{
 						"character": "I",
 						"text": "You murdered that man in cold blood!",
 						"truth": "",
+						"truth_acquisition": "Izmailov's accusation",
 						"shootable": "true",
-						"truth_acquisition": "",
-						"time": "3"
+						"time": "3",
+						"route": {
+							"type": "circle",
+							"size": "256",
+							"speed": "52",
+							"direction": "-1"
+						},
+						"start_position": {
+							"x": "800",
+							"y": "721"
+						}
 					},
 					{
 						"character": "R",
 						"text": "No, it was an accident!",
 						"truth": "",
-						"shootable": "false",
 						"truth_acquisition": "",
-						"time": "2"
+						"shootable": "false",
+						"time": "2",
+						"route": {
+							"type": "rectangle",
+							"width": "164",
+							"height": "152",
+							"speed": "53",
+							"direction": "1"
+						},
+						"start_position": {
+							"x": "1343",
+							"y": "561"
+						}
 					},
 					{
 						"character": "R",
 						"text": "We only meant to subdue him…",
 						"truth": "",
-						"shootable": "false",
 						"truth_acquisition": "",
-						"time": "2"
+						"shootable": "false",
+						"time": "2",
+						"route": {
+							"type": "circle",
+							"size": "299",
+							"speed": "63",
+							"direction": "1"
+						},
+						"start_position": {
+							"x": "1246",
+							"y": "788"
+						}
 					},
 					{
 						"character": "S",
 						"text": "Just one of the necessary casualties of my mutiny.",
 						"truth": "",
-						"shootable": "false",
 						"truth_acquisition": "",
-						"time": "4"
+						"shootable": "false",
+						"time": "4",
+						"route": {
+							"type": "rectangle",
+							"width": "183",
+							"height": "184",
+							"speed": "53",
+							"direction": "-1"
+						},
+						"start_position": {
+							"x": "1180",
+							"y": "422"
+						}
 					},
 					{
 						"character": "B",
 						"text": "Not at all! Alas…",
 						"truth": "",
-						"shootable": "false",
 						"truth_acquisition": "",
-						"time": "1"
+						"shootable": "false",
+						"time": "1",
+						"route": {
+							"type": "circle",
+							"size": "182",
+							"speed": "43",
+							"direction": "1"
+						},
+						"start_position": {
+							"x": "1206",
+							"y": "459"
+						}
 					},
 					{
 						"character": "B",
 						"text": "He did not take my offer well.",
 						"truth": "",
-						"shootable": "false",
 						"truth_acquisition": "",
-						"time": "2"
+						"shootable": "false",
+						"time": "2",
+						"route": {
+							"type": "rectangle",
+							"width": "225",
+							"height": "120",
+							"speed": "46",
+							"direction": "-1"
+						},
+						"start_position": {
+							"x": "626",
+							"y": "838"
+						}
 					},
 					{
 						"character": "B",
 						"text": "He grabbed me by my neck and…",
 						"truth": "",
-						"shootable": "false",
 						"truth_acquisition": "",
-						"time": "2"
+						"shootable": "false",
+						"time": "2",
+						"route": {
+							"type": "circle",
+							"size": "206",
+							"speed": "48",
+							"direction": "-1"
+						},
+						"start_position": {
+							"x": "598",
+							"y": "664"
+						}
 					},
 					{
 						"character": "B",
 						"text": "I had to choose between his death or mine.",
 						"truth": "",
-						"shootable": "false",
 						"truth_acquisition": "",
-						"time": "3"
+						"shootable": "false",
+						"time": "3",
+						"route": {
+							"type": "rectangle",
+							"width": "279",
+							"height": "211",
+							"speed": "60",
+							"direction": "-1"
+						},
+						"start_position": {
+							"x": "974",
+							"y": "575"
+						}
 					},
 					{
 						"character": "B",
 						"text": "There was no other way to take Aphanasia with us.",
 						"truth": "",
-						"shootable": "false",
 						"truth_acquisition": "",
-						"time": "3"
+						"shootable": "false",
+						"time": "3",
+						"route": {
+							"type": "circle",
+							"size": "151",
+							"speed": "42",
+							"direction": "1"
+						},
+						"start_position": {
+							"x": "733",
+							"y": "730"
+						}
 					},
 					{
 						"character": "B",
 						"text": "I did it for her sake, as well as sir Stepanov's.",
 						"truth": "",
+						"truth_acquisition": "Baron's motivation",
 						"shootable": "true",
-						"truth_acquisition": "",
-						"time": "3"
+						"time": "3",
+						"route": {
+							"type": "rectangle",
+							"width": "83",
+							"height": "154",
+							"speed": "59",
+							"direction": "-1"
+						},
+						"start_position": {
+							"x": "822",
+							"y": "659"
+						}
 					},
 					{
 						"character": "B",
 						"text": "His later betrayals were a result of his jealousy…",
 						"truth": "",
-						"shootable": "false",
 						"truth_acquisition": "",
-						"time": "3"
+						"shootable": "false",
+						"time": "3",
+						"route": {
+							"type": "circle",
+							"size": "129",
+							"speed": "42",
+							"direction": "-1"
+						},
+						"start_position": {
+							"x": "881",
+							"y": "346"
+						}
 					},
 					{
 						"character": "B",
 						"text": "of the love that Aphanasia had for me.",
 						"truth": "",
-						"shootable": "false",
 						"truth_acquisition": "",
-						"time": "3"
+						"shootable": "false",
+						"time": "3",
+						"route": {
+							"type": "rectangle",
+							"width": "65",
+							"height": "173",
+							"speed": "64",
+							"direction": "1"
+						},
+						"start_position": {
+							"x": "1081",
+							"y": "511"
+						}
 					},
 					{
 						"character": "S",
 						"text": "I know nothing of such woman!",
 						"truth": "",
-						"shootable": "false",
 						"truth_acquisition": "",
-						"time": "3"
+						"shootable": "false",
+						"time": "3",
+						"route": {
+							"type": "circle",
+							"size": "69",
+							"speed": "47",
+							"direction": "1"
+						},
+						"start_position": {
+							"x": "1087",
+							"y": "257"
+						}
 					},
 					{
 						"character": "S",
 						"text": "Lies! Complete fabrication!",
 						"truth": "",
-						"shootable": "false",
 						"truth_acquisition": "",
-						"time": "2"
+						"shootable": "false",
+						"time": "2",
+						"route": {
+							"type": "rectangle",
+							"width": "88",
+							"height": "163",
+							"speed": "46",
+							"direction": "1"
+						},
+						"start_position": {
+							"x": "722",
+							"y": "475"
+						}
 					},
 					{
 						"character": "R",
 						"text": "Could there really have been someone like that?",
-						"truth": "But we were both there!",
-						"shootable": "false",
+						"truth": "Ryumin's account",
 						"truth_acquisition": "",
-						"time": "4"
+						"shootable": "false",
+						"time": "4",
+						"route": {
+							"type": "circle",
+							"size": "101",
+							"speed": "34",
+							"direction": "1"
+						},
+						"start_position": {
+							"x": "1180",
+							"y": "422"
+						}
 					}
 			],
 			"incorrect_dialogue": [
