@@ -1,11 +1,5 @@
-res://nodes/bubble.tscn
-res://data/shooting_stage_data.json
-res://scripts/shooting_stage_controller.gd
 res://scenes/shooting_stage.tscn
-res://nodes/bullet.tscn
+res://scripts/shooting_stage_controller.gd
+res://nodes/bubble.tscn
 res://nodes/crosshair.tscn
-res://scripts/crosshair.gd
-res://scripts/bullet_chamber.gd
-res://scripts/bullet.gd
-res://shapes/new_rectangle_shape_2d.tres
-res://scripts/bubble.gd
+res://nodes/bullet.tscn
