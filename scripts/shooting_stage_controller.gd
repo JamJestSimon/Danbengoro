@@ -138,3 +138,11 @@ func on_incorrect_bubble_destoryed() -> void:
 func on_correct_bubble_destoryed() -> void:
 	player_bubble = 0
 	spawn_player_bubble()
+
+func _input(event):
+	if event.is_action_pressed("SpeedUp"):
+		Engine.time_scale = 5.
+		return
+	elif event.is_action_released("SpeedUp"):
+		Engine.time_scale = 1.
+		return
