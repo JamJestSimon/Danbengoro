@@ -1,56 +1,250 @@
 {
 	"stages": [
 		{
-			"title": "This is a title.",
+			"title": "Whatever happened to governor Nilov?",
 			"bullets": [
-				"Truth 1",
-				"Truth 2"
+				"Hanbengoro's Letter",
+				"Updated Autopsy Report",
+				"Attorney's Badge"
 			],
 			"bubbles": [
+					{
+						"character": "B",
+						"text": "What a tragic story…",
+						"truth": "",
+						"shootable": "false",
+						"time": "1"
+					},
+					{
+						"character": "B",
+						"text": "He was my friend.",
+						"truth": "",
+						"shootable": "true",
+						"time": "1"
+					},
+					{
+						"character": "B",
+						"text": "A fatherly figure.",
+						"truth": "",
+						"shootable": "false",
+						"time": "1"
+					},
+					{
+						"character": "B",
+						"text": "That gentleman hired me as a language tutor for his daughters.",
+						"truth": "",
+						"shootable": "false",
+						"time": "5"
+					},
+					{
+						"character": "S",
+						"text": "Daughters?",
+						"truth": "",
+						"shootable": "false",
+						"time": "1"
+					},
+					{
+						"character": "I",
+						"text": "Never heard of 'em.",
+						"truth": "",
+						"shootable": "false",
+						"time": "2"
+					},
+					{
+						"character": "B",
+						"text": "Two of them married, one betrothed to a noble.",
+						"truth": "",
+						"shootable": "false",
+						"time": "3"
+					},
+					{
+						"character": "B",
+						"text": "My little Aphanasia…",
+						"truth": "",
+						"shootable": "false",
+						"time": "1"
+					},
+					{
+						"character": "R",
+						"text": "That's odd…",
+						"truth": "",
+						"shootable": "false",
+						"time": "1"
+					},
+					{
+						"character": "B",
+						"text": "When we were preparing to go…",
+						"truth": "",
+						"shootable": "false",
+						"time": "3"
+					},
+					{
+						"character": "B",
+						"text": "I asked her father to let her leave with us.",
+						"truth": "",
+						"shootable": "false",
+						"time": "3"
+					},
+					{
+						"character": "R",
+						"text": "What?",
+						"truth": "",
+						"shootable": "false",
+						"time": "1"
+					},
+					{
+						"character": "R",
+						"text": "But we were both there!",
+						"truth": "",
+						"shootable": "true",
+						"time": "2"
+					},
+					{
+						"character": "I",
+						"text": "You murdered that man in cold blood!",
+						"truth": "",
+						"shootable": "true",
+						"time": "3"
+					},
+					{
+						"character": "R",
+						"text": "No, it was an accident!",
+						"truth": "",
+						"shootable": "false",
+						"time": "2"
+					},
+					{
+						"character": "R",
+						"text": "We only meant to subdue him…",
+						"truth": "",
+						"shootable": "false",
+						"time": "2"
+					},
+					{
+						"character": "S",
+						"text": "Just one of the necessary casualties of my mutiny.",
+						"truth": "",
+						"shootable": "false",
+						"time": "4"
+					},
+					{
+						"character": "B",
+						"text": "Not at all! Alas…",
+						"truth": "",
+						"shootable": "false",
+						"time": "1"
+					},
+					{
+						"character": "B",
+						"text": "He did not take my offer well.",
+						"truth": "",
+						"shootable": "false",
+						"time": "2"
+					},
+					{
+						"character": "B",
+						"text": "He grabbed me by my neck and…",
+						"truth": "",
+						"shootable": "false",
+						"time": "2"
+					},
+					{
+						"character": "B",
+						"text": "I had to choose between his death or mine.",
+						"truth": "",
+						"shootable": "false",
+						"time": "3"
+					},
+					{
+						"character": "B",
+						"text": "There was no other way to take Aphanasia with us.",
+						"truth": "",
+						"shootable": "false",
+						"time": "3"
+					},
+					{
+						"character": "B",
+						"text": "I did it for her sake, as well as sir Stepanov's.",
+						"truth": "",
+						"shootable": "true",
+						"time": "3"
+					},
+					{
+						"character": "B",
+						"text": "His later betrayals were a result of his jealousy…",
+						"truth": "",
+						"shootable": "false",
+						"time": "3"
+					},
+					{
+						"character": "B",
+						"text": "of the love that Aphanasia had for me.",
+						"truth": "",
+						"shootable": "false",
+						"time": "3"
+					},
+					{
+						"character": "S",
+						"text": "I know nothing of such woman!",
+						"truth": "",
+						"shootable": "false",
+						"time": "3"
+					},
+					{
+						"character": "S",
+						"text": "Lies! Complete fabrication!",
+						"truth": "",
+						"shootable": "false",
+						"time": "2"
+					},
+					{
+						"character": "R",
+						"text": "Could there really have been someone like that?",
+						"truth": "But we were both there!",
+						"shootable": "false",
+						"time": "4"
+					}
+			],
+			"incorrect_dialogue": [
 				{
-					"text": "this is a test",
-					"shootable": true,
 					"character": "B",
-					"truth": "Truth 1",
-					"start_position": {
-						"x": 400,
-						"y": 400
-					},
-					"route": {
-						"type": "circle",
-						"size": 200,
-						"speed": 50,
-						"direction": 1
-					},
-					"time": 10
+					"text": "Surely you don't think this proves anything?",
+					"time": 4
 				},
 				{
-					"text": "this is a test 2",
-					"truth": "",
-					"shootable": false,
+					"character": "R",
+					"text": "Don't you think it's all a little off?",
+					"time": 4
+				},
+				{
 					"character": "I",
-					"start_position": {
-						"x": 600,
-						"y": 600
-					},
-					"route": {
-						"type": "rectangle",
-						"width": 200,
-						"height": 300,
-						"speed": 50,
-						"direction": -1
-					},
-					"time": 10
+					"text": "Don't believe his lies.",
+					"time": 3
+				}
+			],
+			"restart_dialogue": [
+				{
+					"character": "R",
+					"text": "Something isn't right here...",
+					"time": 3
 				}
 			],
 			"end_bubbles": [
 				{
-					"text": "text 1",
-					"time": 10
+					"text": "Could there really indeed?",
+					"time": "4"
 				},
 				{
-					"text": "text 2",
-					"time": 10
+					"text": "One would think that if lady Aphanasia really was there...",
+					"time": "5"
+				},
+				{
+					"text": "Mr Ryumin would have met her.",
+					"time": "3"
+				},
+				{
+					"text": "Why don't we look into this further?",
+					"time": "3"
 				}
 			]
 		}
