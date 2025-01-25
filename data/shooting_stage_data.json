@@ -1,0 +1,58 @@
+{
+	"stages": [
+		{
+			"title": "This is a title.",
+			"bullets": [
+				"Truth 1",
+				"Truth 2"
+			],
+			"bubbles": [
+				{
+					"text": "this is a test",
+					"shootable": true,
+					"character": "B",
+					"truth": "Truth 1",
+					"start_position": {
+						"x": 100,
+						"y": 200
+					},
+					"route": {
+						"type": "circle",
+						"size": 200,
+						"speed": 50,
+						"direction": 1
+					},
+					"time": 10
+				},
+				{
+					"text": "this is a test 2",
+					"truth": "",
+					"shootable": false,
+					"character": "I",
+					"start_position": {
+						"x": 300,
+						"y": 400
+					},
+					"route": {
+						"type": "rectangle",
+						"width": 200,
+						"height": 300,
+						"speed": 50,
+						"direction": -1
+					},
+					"time": 10
+				}
+			],
+			"end_bubbles": [
+				{
+					"text": "text 1",
+					"time": 10
+				},
+				{
+					"text": "text 2",
+					"time": 10
+				}
+			]
+		}
+	]
+}

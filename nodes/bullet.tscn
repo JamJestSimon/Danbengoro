@@ -1,9 +1,19 @@
-[gd_scene load_steps=2 format=3 uid="uid://chcjcpcdb2lau"]
+[gd_scene load_steps=3 format=3 uid="uid://c2prewlygy8qx"]
 
-[sub_resource type="PlaceholderTexture2D" id="PlaceholderTexture2D_q2rsp"]
+[ext_resource type="Script" path="res://scripts/bullet.gd" id="1_isfk3"]
 
-[node name="Bullet" type="Label"]
-text = "aaaaaa"
+[sub_resource type="PlaceholderTexture2D" id="PlaceholderTexture2D_tdcf2"]
+
+[node name="Label" type="Label"]
+anchors_preset = 9
+anchor_bottom = 1.0
+offset_right = 1.0
+grow_vertical = 2
+size_flags_horizontal = 0
+vertical_alignment = 1
+script = ExtResource("1_isfk3")
+selected_scale = Vector2(1.5, 1.5)
+transition_type = 1
 
 [node name="TextureRect" type="TextureRect" parent="."]
 z_index = -1
@@ -13,4 +23,4 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-texture = SubResource("PlaceholderTexture2D_q2rsp")
+texture = SubResource("PlaceholderTexture2D_tdcf2")

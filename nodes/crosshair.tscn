@@ -4,9 +4,9 @@
 [ext_resource type="Shape2D" uid="uid://cejw50jb5grlf" path="res://shapes/new_circle_shape_2d.tres" id="2_xbwo7"]
 
 [sub_resource type="PlaceholderTexture2D" id="PlaceholderTexture2D_cdwud"]
+size = Vector2(30, 30)
 
 [node name="Crosshair" type="Sprite2D"]
-scale = Vector2(30, 30)
 texture = SubResource("PlaceholderTexture2D_cdwud")
 script = ExtResource("1_x283m")
 

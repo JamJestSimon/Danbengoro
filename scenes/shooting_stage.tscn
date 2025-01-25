@@ -1,0 +1,25 @@
+[gd_scene load_steps=4 format=3 uid="uid://doolfp234vakd"]
+
+[ext_resource type="Script" path="res://scripts/shooting_stage_controller.gd" id="1_6nfw1"]
+[ext_resource type="Script" path="res://scripts/bullet_chamber.gd" id="2_jch3p"]
+[ext_resource type="PackedScene" uid="uid://cr4mqugse8mpm" path="res://nodes/crosshair.tscn" id="3_on5vh"]
+
+[node name="Node2D" type="Node2D" node_paths=PackedStringArray("bullet_chamber")]
+script = ExtResource("1_6nfw1")
+bullet_chamber = NodePath("CanvasLayer/VBoxContainer")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="VBoxContainer" type="VBoxContainer" parent="CanvasLayer" node_paths=PackedStringArray("crosshair")]
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+grow_vertical = 0
+size_flags_horizontal = 0
+mouse_filter = 2
+script = ExtResource("2_jch3p")
+truths = Array[String](["Truth 1", "Truth 2", "Truth 3"])
+crosshair = NodePath("../../Crosshair")
+
+[node name="Crosshair" parent="." node_paths=PackedStringArray("bullet_chamber") instance=ExtResource("3_on5vh")]
+bullet_chamber = NodePath("../CanvasLayer/VBoxContainer")
