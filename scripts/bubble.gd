@@ -29,7 +29,9 @@ func _process(delta: float) -> void:
 			else:
 				get_parent().call_deferred("next_player_bubble")
 			self.call_deferred("free")
-	pass
+
+func set_player():
+	player_bubble = true
 
 func pop_correct():
 	#anim goes here
@@ -56,6 +58,10 @@ func set_shootable(value: bool):
 func set_time(value: float):
 	exists = true
 	time_to_live = value
+
+func set_truth_acquisition(value: String):
+	sprite.set_meta("truth_acquisition", value)
+	pass
 
 func set_route(value: Dictionary):
 	type = value["type"]

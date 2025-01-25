@@ -1,8 +1,16 @@
-[gd_scene load_steps=4 format=3 uid="uid://doolfp234vakd"]
+[gd_scene load_steps=10 format=3 uid="uid://doolfp234vakd"]
 
 [ext_resource type="Script" path="res://scripts/shooting_stage_controller.gd" id="1_6nfw1"]
 [ext_resource type="Script" path="res://scripts/bullet_chamber.gd" id="2_jch3p"]
+[ext_resource type="Texture2D" uid="uid://blrr3ldgbcay1" path="res://sprites/Izmajłow.png" id="2_k3cdj"]
 [ext_resource type="PackedScene" uid="uid://cr4mqugse8mpm" path="res://nodes/crosshair.tscn" id="3_on5vh"]
+[ext_resource type="Texture2D" uid="uid://dvpqgjewqx88q" path="res://sprites/Beniowski.png" id="3_stx5x"]
+[ext_resource type="Texture2D" uid="uid://1usfeoogic6i" path="res://sprites/Stiepanow.png" id="4_euknh"]
+[ext_resource type="Texture2D" uid="uid://cwk83jf4b2wp4" path="res://sprites/Riumin.png" id="5_26naj"]
+[ext_resource type="Texture2D" uid="uid://b4ml7rkh3gf0m" path="res://sprites/Crosshair.png" id="8_i46nt"]
+
+[sub_resource type="PlaceholderTexture2D" id="PlaceholderTexture2D_wy81u"]
+size = Vector2(1000, 1000)
 
 [node name="Node2D" type="Node2D" node_paths=PackedStringArray("bullet_chamber", "title", "speaker", "speechbox")]
 script = ExtResource("1_6nfw1")
@@ -10,6 +18,10 @@ bullet_chamber = NodePath("CanvasLayer/BulletChamber")
 title = NodePath("CanvasLayer/Title")
 speaker = NodePath("Speaker")
 speechbox = NodePath("CanvasLayer/SpeechBox")
+izmailow = ExtResource("2_k3cdj")
+beniowski = ExtResource("3_stx5x")
+stieplanow = ExtResource("4_euknh")
+riumin = ExtResource("5_26naj")
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 
@@ -34,10 +46,22 @@ horizontal_alignment = 1
 vertical_alignment = 1
 
 [node name="SpeechBox" type="RichTextLabel" parent="CanvasLayer"]
-offset_right = 40.0
-offset_bottom = 40.0
+custom_minimum_size = Vector2(0, 300)
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 0
+fit_content = true
+scroll_active = false
 
 [node name="Crosshair" parent="." node_paths=PackedStringArray("bullet_chamber") instance=ExtResource("3_on5vh")]
+z_index = 10
+texture = ExtResource("8_i46nt")
 bullet_chamber = NodePath("../CanvasLayer/BulletChamber")
 
 [node name="Speaker" type="Sprite2D" parent="."]
+z_index = -2
+position = Vector2(970, 528)
+texture = SubResource("PlaceholderTexture2D_wy81u")
