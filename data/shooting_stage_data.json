@@ -1747,6 +1747,28 @@
 					}
 				}
 			],
+			"incorrect_dialogue": [
+				{
+					"character": "B",
+					"text": "You know nothing!",
+					"time": 4
+				},
+				{
+					"character": "R",
+					"text": "What are you trying to say?",
+					"time": 4
+				},
+				{
+					"character": "I",
+					"text": "That man is absolutely clueless.",
+					"time": 3
+				},
+				{
+					"character": "S",
+					"text": "You think I'm lying?",
+					"time": 3
+				}
+			],
 			"restart_dialogue": [
 				{
 					"character": "S",
@@ -1970,6 +1992,18 @@
 					}
 				}
 			],
+			"incorrect_dialogue": [
+				{
+					"character": "B",
+					"text": "That has nothing to do with this!",
+					"time": 4
+				},
+				{
+					"character": "S",
+					"text": "You're still taking his side?",
+					"time": 3
+				}
+			],
 			"restart_dialogue": [
 				{
 					"character": "R",
@@ -1997,6 +2031,242 @@
 				{
 					"text": "you still decided to arrive at those shores.",
 					"time": "3"
+				}
+			]
+		},
+		{
+			"title": "What really went down by the Japanese shore?",
+			"bullets": [
+				"Hanbengoro's Letter F",
+				"Updatestest Autopsy Report",
+				"Attorney's Badge"
+			],
+			"bubbles": [
+				{
+					"character": "B",
+					"text": "I wasn't lost, I just kept our location a secret!",
+					"truth": "",
+					"truth_acquisition": "Secret location",
+					"shootable": true,
+					"time": 2.722,
+					"route": {
+						"type": "rectangle",
+						"width": "124",
+						"height": "40",
+						"speed": "56",
+						"direction": 1
+					},
+					"start_position": {
+						"x": "658",
+						"y": "362"
+					}
+				},
+				{
+					"character": "B",
+					"text": "There are many people who would abuse that knowledge.",
+					"truth": "",
+					"truth_acquisition": "",
+					"shootable": false,
+					"time": 2.9,
+					"route": {
+						"type": "circle",
+						"size": "140",
+						"speed": "48",
+						"direction": 1
+					},
+					"start_position": {
+						"x": "774",
+						"y": "293"
+					}
+				},
+				{
+					"character": "B",
+					"text": "But it doesn't matter,",
+					"truth": "",
+					"truth_acquisition": "",
+					"shootable": false,
+					"time": 1.467,
+					"route": {
+						"type": "rectangle",
+						"width": "99",
+						"height": "61",
+						"speed": "68",
+						"direction": 1
+					},
+					"start_position": {
+						"x": "986",
+						"y": "752"
+					}
+				},
+				{
+					"character": "B",
+					"text": "since we set course for Japan anyway.",
+					"truth": "Forced visit",
+					"truth_acquisition": "Course for Japan",
+					"shootable": true,
+					"time": 2.056,
+					"route": {
+						"type": "circle",
+						"size": "156",
+						"speed": "44",
+						"direction": -1
+					},
+					"start_position": {
+						"x": "736",
+						"y": "639"
+					}
+				},
+				{
+					"character": "R",
+					"text": "I just remember a big storm....",
+					"truth": "",
+					"truth_acquisition": "",
+					"shootable": false,
+					"time": 1.722,
+					"route": {
+						"type": "circle",
+						"size": "117",
+						"speed": "55",
+						"direction": 1
+					},
+					"start_position": {
+						"x": "949",
+						"y": "608"
+					}
+				},
+				{
+					"character": "R",
+					"text": "Our ship tossed from side to side...",
+					"truth": "",
+					"truth_acquisition": "",
+					"shootable": false,
+					"time": 2,
+					"route": {
+						"type": "rectangle",
+						"width": "294",
+						"height": "74",
+						"speed": "57",
+						"direction": 1
+					},
+					"start_position": {
+						"x": "993",
+						"y": "673"
+					}
+				},
+				{
+					"character": "R",
+					"text": "We were praying for safety.",
+					"truth": "",
+					"truth_acquisition": "",
+					"shootable": false,
+					"time": 1.68,
+					"route": {
+						"type": "circle",
+						"size": "287",
+						"speed": "47",
+						"direction": 1
+					},
+					"start_position": {
+						"x": "1018",
+						"y": "738"
+					}
+				},
+				{
+					"character": "S",
+					"text": "Two of our masts broke.",
+					"truth": "",
+					"truth_acquisition": "",
+					"shootable": false,
+					"time": 1.533,
+					"route": {
+						"type": "rectangle",
+						"width": "271",
+						"height": "245",
+						"speed": "63",
+						"direction": -1
+					},
+					"start_position": {
+						"x": "943",
+						"y": "565"
+					}
+				},
+				{
+					"character": "S",
+					"text": "There was no choice but to land there.",
+					"truth": "",
+					"truth_acquisition": "Forced visit",
+					"shootable": true,
+					"time": 2.111,
+					"route": {
+						"type": "circle",
+						"size": "117",
+						"speed": "55",
+						"direction": 1
+					},
+					"start_position": {
+						"x": "949",
+						"y": "608"
+					}
+				},
+				{
+					"character": "B",
+					"text": "Luckily my navigational skill brought the ship to port safely.",
+					"truth": "",
+					"truth_acquisition": "",
+					"shootable": false,
+					"time": 3.307,
+					"route": {
+						"type": "circle",
+						"size": "244",
+						"speed": "56",
+						"direction": 1
+					},
+					"start_position": {
+						"x": "1201",
+						"y": "557"
+					}
+				}
+			],
+			"incorrect_dialogue": [
+				{
+					"character": "B",
+					"text": "I'm not lying, fools!",
+					"time": 4
+				},
+				{
+					"character": "S",
+					"text": "I'm telling the truth.",
+					"time": 3
+				},
+				{
+					"character": "S",
+					"text": "I had no reason to lie.",
+					"time": 3
+				}
+			],
+			"restart_dialogue": [
+				{
+					"character": "R",
+					"text": "We really were attacked, weren't we?",
+					"time": 3
+				}
+			],
+			"end_bubbles": [
+				{
+					"text": "I find your excursion difficult to believe.",
+					"time": "4"
+				},
+				{
+					"text": "You say you visited the king's palace...",
+					"time": "4"
+				},
+				{
+					"text": "even though the Japanese forbid you to leave the ship?",
+					"time": "5"
+				},
+				{
+					"text": "Isn't this another of your fancy fabrications?",
+					"time": "4"
 				}
 			]
 		}

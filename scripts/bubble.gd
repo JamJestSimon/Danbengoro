@@ -2,6 +2,7 @@ extends Path2D
 
 @export var label: Label
 @export var sprite: Sprite2D
+@export var particle_emmiter: GPUParticles2D
 var direction: int
 var type: String
 var size: Vector2
@@ -36,12 +37,22 @@ func set_player():
 
 func pop_correct():
 	#anim goes here
+	dying = true
 	get_parent().call_deferred("on_correct_bubble_destoryed")
+	particle_emmiter.reparent(self)
+	sprite.call_deferred("free")
+	particle_emmiter.emitting = true
+	await particle_emmiter.finished
 	self.call_deferred("free")
 
 func pop_incorrect():
 	#anim goes here
+	dying = true
 	get_parent().call_deferred("on_incorrect_bubble_destoryed")
+	particle_emmiter.reparent(self)
+	sprite.call_deferred("free")
+	particle_emmiter.emitting = true
+	await particle_emmiter.finished
 	self.call_deferred("free")
 
 func set_start_pos(value: Vector2):
