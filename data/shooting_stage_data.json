@@ -2044,11 +2044,11 @@
 			"bubbles": [
 				{
 					"character": "B",
-					"text": "I wasn't lost, I just kept our location a secret!",
+					"text": "Accidental or not, the ship did land.",
 					"truth": "",
-					"truth_acquisition": "Secret location",
+					"truth_acquisition": "Ship landed",
 					"shootable": true,
-					"time": 2.722,
+					"time": 2.056,
 					"route": {
 						"type": "rectangle",
 						"width": "124",
@@ -2063,11 +2063,11 @@
 				},
 				{
 					"character": "B",
-					"text": "There are many people who would abuse that knowledge.",
+					"text": "We were welcomed by a local king.",
 					"truth": "",
 					"truth_acquisition": "",
 					"shootable": false,
-					"time": 2.9,
+					"time": 1.833,
 					"route": {
 						"type": "circle",
 						"size": "140",
@@ -2081,11 +2081,11 @@
 				},
 				{
 					"character": "B",
-					"text": "But it doesn't matter,",
+					"text": "We were given food and water...",
 					"truth": "",
 					"truth_acquisition": "",
 					"shootable": false,
-					"time": 1.467,
+					"time": 1.722,
 					"route": {
 						"type": "rectangle",
 						"width": "99",
@@ -2100,11 +2100,11 @@
 				},
 				{
 					"character": "B",
-					"text": "since we set course for Japan anyway.",
-					"truth": "Forced visit",
-					"truth_acquisition": "Course for Japan",
+					"text": "and I visited his palace.",
+					"truth": "Confined to the ship",
+					"truth_acquisition": "Palace visit",
 					"shootable": true,
-					"time": 2.056,
+					"time": 1.667,
 					"route": {
 						"type": "circle",
 						"size": "156",
@@ -2117,12 +2117,12 @@
 					}
 				},
 				{
-					"character": "R",
-					"text": "I just remember a big storm....",
+					"character": "B",
+					"text": "There we talked...",
 					"truth": "",
 					"truth_acquisition": "",
 					"shootable": false,
-					"time": 1.722,
+					"time": 1.2,
 					"route": {
 						"type": "circle",
 						"size": "117",
@@ -2135,12 +2135,12 @@
 					}
 				},
 				{
-					"character": "R",
-					"text": "Our ship tossed from side to side...",
+					"character": "B",
+					"text": "and the king allowed me to return anytime.",
 					"truth": "",
 					"truth_acquisition": "",
 					"shootable": false,
-					"time": 2,
+					"time": 2.333,
 					"route": {
 						"type": "rectangle",
 						"width": "294",
@@ -2154,12 +2154,12 @@
 					}
 				},
 				{
-					"character": "R",
-					"text": "We were praying for safety.",
+					"character": "S",
+					"text": "All lies!",
 					"truth": "",
 					"truth_acquisition": "",
 					"shootable": false,
-					"time": 1.68,
+					"time": 1,
 					"route": {
 						"type": "circle",
 						"size": "287",
@@ -2173,11 +2173,11 @@
 				},
 				{
 					"character": "S",
-					"text": "Two of our masts broke.",
+					"text": "Nothing you said was true!",
 					"truth": "",
 					"truth_acquisition": "",
 					"shootable": false,
-					"time": 1.533,
+					"time": 1.68,
 					"route": {
 						"type": "rectangle",
 						"width": "271",
@@ -2192,11 +2192,11 @@
 				},
 				{
 					"character": "S",
-					"text": "There was no choice but to land there.",
+					"text": "We tried to arrive to the shore...",
 					"truth": "",
-					"truth_acquisition": "Forced visit",
-					"shootable": true,
-					"time": 2.111,
+					"truth_acquisition": "",
+					"shootable": false,
+					"time": 1.889,
 					"route": {
 						"type": "circle",
 						"size": "117",
@@ -2209,12 +2209,12 @@
 					}
 				},
 				{
-					"character": "B",
-					"text": "Luckily my navigational skill brought the ship to port safely.",
+					"character": "S",
+					"text": "but were rejected...",
 					"truth": "",
 					"truth_acquisition": "",
 					"shootable": false,
-					"time": 3.307,
+					"time": 1.333,
 					"route": {
 						"type": "circle",
 						"size": "244",
@@ -2224,6 +2224,229 @@
 					"start_position": {
 						"x": "1201",
 						"y": "557"
+					}
+				},
+				{
+					"character": "S",
+					"text": "and led to a different port.",
+					"truth": "",
+					"truth_acquisition": "",
+					"shootable": false,
+					"time": 1.68,
+					"route": {
+						"type": "rectangle",
+						"width": "287",
+						"height": "237",
+						"speed": "65",
+						"direction": 1
+					},
+					"start_position": {
+						"x": "1274",
+						"y": "389"
+					}
+				},
+				{
+					"character": "S",
+					"text": "You know what happens to those who arrive outside Nangasaki.",
+					"truth": "",
+					"truth_acquisition": "",
+					"shootable": false,
+					"time": 1.889,
+					"route": {
+						"type": "circle",
+						"size": "244",
+						"speed": "56",
+						"direction": 1
+					},
+					"start_position": {
+						"x": "1201",
+						"y": "557"
+					}
+				},
+				{
+					"character": "R",
+					"text": "Death to the crew...",
+					"truth": "",
+					"truth_acquisition": "",
+					"shootable": false,
+					"time": 1.333,
+					"route": {
+						"type": "rectangle",
+						"width": "66",
+						"height": "89",
+						"speed": "56",
+						"direction": 1
+					},
+					"start_position": {
+						"x": "669",
+						"y": "759"
+					}
+				},
+				{
+					"character": "R",
+					"text": "and to anyone who let them in.",
+					"truth": "",
+					"truth_acquisition": "",
+					"shootable": false,
+					"time": 1.68,
+					"route": {
+						"type": "circle",
+						"size": "70",
+						"speed": "42",
+						"direction": 1
+					},
+					"start_position": {
+						"x": "739",
+						"y": "534"
+					}
+				},
+				{
+					"character": "S",
+					"text": "They allowed us to arrive at a port,",
+					"truth": "",
+					"truth_acquisition": "Arrival at port",
+					"shootable": true,
+					"time": 2,
+					"route": {
+						"type": "rectangle",
+						"width": "210",
+						"height": "212",
+						"speed": "64",
+						"direction": -1
+					},
+					"start_position": {
+						"x": "1218",
+						"y": "611"
+					}
+				},
+				{
+					"character": "S",
+					"text": "but when we tried to leave the ship,",
+					"truth": "",
+					"truth_acquisition": "",
+					"shootable": false,
+					"time": 2,
+					"route": {
+						"type": "circle",
+						"size": "256",
+						"speed": "52",
+						"direction": -1
+					},
+					"start_position": {
+						"x": "800",
+						"y": "721"
+					}
+				},
+				{
+					"character": "S",
+					"text": "we were ordered to stay.",
+					"truth": "",
+					"truth_acquisition": "",
+					"shootable": false,
+					"time": 1.6,
+					"route": {
+						"type": "rectangle",
+						"width": "164",
+						"height": "152",
+						"speed": "53",
+						"direction": 1
+					},
+					"start_position": {
+						"x": "1343",
+						"y": "561"
+					}
+				},
+				{
+					"character": "R",
+					"text": "They still brought us food and water...",
+					"truth": "",
+					"truth_acquisition": "",
+					"shootable": false,
+					"time": 2.167,
+					"route": {
+						"type": "circle",
+						"size": "299",
+						"speed": "63",
+						"direction": 1
+					},
+					"start_position": {
+						"x": "1246",
+						"y": "788"
+					}
+				},
+				{
+					"character": "R",
+					"text": "but at no point did we take a step on the Japanese soil.",
+					"truth": "",
+					"truth_acquisition": "Confined to the ship",
+					"shootable": true,
+					"time": 2.987,
+					"route": {
+						"type": "rectangle",
+						"width": "183",
+						"height": "184",
+						"speed": "53",
+						"direction": -1
+					},
+					"start_position": {
+						"x": "1180",
+						"y": "422"
+					}
+				},
+				{
+					"character": "R",
+					"text": "The locals must have received secret instructions...",
+					"truth": "",
+					"truth_acquisition": "",
+					"shootable": false,
+					"time": 2.889,
+					"route": {
+						"type": "rectangle",
+						"width": "225",
+						"height": "120",
+						"speed": "46",
+						"direction": -1
+					},
+					"start_position": {
+						"x": "626",
+						"y": "838"
+					}
+				},
+				{
+					"character": "R",
+					"text": "because they later set up a trap.",
+					"truth": "",
+					"truth_acquisition": "",
+					"shootable": false,
+					"time": 1.833,
+					"route": {
+						"type": "circle",
+						"size": "206",
+						"speed": "48",
+						"direction": -1
+					},
+					"start_position": {
+						"x": "598",
+						"y": "664"
+					}
+				},
+				{
+					"character": "R",
+					"text": "We barely escaped with out lives.",
+					"truth": "",
+					"truth_acquisition": "Narrow escape",
+					"shootable": true,
+					"time": 1.833,
+					"route": {
+						"type": "rectangle",
+						"width": "279",
+						"height": "211",
+						"speed": "60",
+						"direction": -1
+					},
+					"start_position": {
+						"x": "974",
+						"y": "575"
 					}
 				}
 			],
