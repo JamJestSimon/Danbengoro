@@ -934,10 +934,437 @@
 				{
 					"text": "She's a complete fabrication!",
 					"time": "3"
-				}
+				},
 				{
 					"text": "Your excuse why Stepanov tried to sabotage you does not hold!",
 					"time": "5"
+				}
+			]
+		},
+		{
+			"title": "Whatever happened to governor Nilov?",
+			"bullets": [
+				"Hanbengoro's Letter C",
+				"Updatier Autopsy Report",
+				"Attorney's Badge"
+			],
+			"bubbles": [
+				{
+					"character": "B",
+					"text": "What kind of question is that?",
+					"truth": "",
+					"truth_acquisition": "",
+					"shootable": false,
+					"time": 1.68,
+					"route": {
+						"type": "rectangle",
+						"width": "124",
+						"height": "40",
+						"speed": "56",
+						"direction": 1
+					},
+					"start_position": {
+						"x": "658",
+						"y": "362"
+					}
+				},
+				{
+					"character": "B",
+					"text": "Of course it was me!",
+					"truth": "",
+					"truth_acquisition": "",
+					"shootable": false,
+					"time": 1.333,
+					"route": {
+						"type": "circle",
+						"size": "140",
+						"speed": "48",
+						"direction": 1
+					},
+					"start_position": {
+						"x": "774",
+						"y": "293"
+					}
+				},
+				{
+					"character": "B",
+					"text": "There was a vote!",
+					"truth": "",
+					"truth_acquisition": "",
+					"shootable": false,
+					"time": 1.133,
+					"route": {
+						"type": "rectangle",
+						"width": "99",
+						"height": "61",
+						"speed": "68",
+						"direction": 1
+					},
+					"start_position": {
+						"x": "986",
+						"y": "752"
+					}
+				},
+				{
+					"character": "B",
+					"text": "I was unanimously elected captain!",
+					"truth": "",
+					"truth_acquisition": "Unanimous vote",
+					"shootable": true,
+					"time": 1.889,
+					"route": {
+						"type": "circle",
+						"size": "156",
+						"speed": "44",
+						"direction": -1
+					},
+					"start_position": {
+						"x": "736",
+						"y": "639"
+					}
+				},
+				{
+					"character": "S",
+					"text": "As if!",
+					"truth": "",
+					"truth_acquisition": "",
+					"shootable": false,
+					"time": 1,
+					"route": {
+						"type": "rectangle",
+						"width": "294",
+						"height": "74",
+						"speed": "57",
+						"direction": 1
+					},
+					"start_position": {
+						"x": "993",
+						"y": "673"
+					}
+				},
+				{
+					"character": "S",
+					"text": "Despite your best efforts to undermine me...",
+					"truth": "",
+					"truth_acquisition": "",
+					"shootable": false,
+					"time": 2.444,
+					"route": {
+						"type": "circle",
+						"size": "287",
+						"speed": "47",
+						"direction": 1
+					},
+					"start_position": {
+						"x": "1018",
+						"y": "738"
+					}
+				},
+				{
+					"character": "S",
+					"text": "I was the commander on that ship!",
+					"truth": "",
+					"truth_acquisition": "Stiepanov's command",
+					"shootable": true,
+					"time": 1.833,
+					"route": {
+						"type": "rectangle",
+						"width": "271",
+						"height": "245",
+						"speed": "63",
+						"direction": -1
+					},
+					"start_position": {
+						"x": "943",
+						"y": "565"
+					}
+				},
+				{
+					"character": "I",
+					"text": "What?",
+					"truth": "",
+					"truth_acquisition": "",
+					"shootable": false,
+					"time": 1,
+					"route": {
+						"type": "circle",
+						"size": "117",
+						"speed": "55",
+						"direction": 1
+					},
+					"start_position": {
+						"x": "949",
+						"y": "608"
+					}
+				},
+				{
+					"character": "I",
+					"text": "Then who left me stranded on that island?",
+					"truth": "",
+					"truth_acquisition": "",
+					"shootable": false,
+					"time": 2.278,
+					"route": {
+						"type": "rectangle",
+						"width": "287",
+						"height": "237",
+						"speed": "65",
+						"direction": 1
+					},
+					"start_position": {
+						"x": "1274",
+						"y": "389"
+					}
+				},
+				{
+					"character": "S",
+					"text": "Stranded?",
+					"truth": "",
+					"truth_acquisition": "",
+					"shootable": false,
+					"time": 1,
+					"route": {
+						"type": "circle",
+						"size": "244",
+						"speed": "56",
+						"direction": 1
+					},
+					"start_position": {
+						"x": "1201",
+						"y": "557"
+					}
+				},
+				{
+					"character": "S",
+					"text": "I don't recall you being left stranded anywhere.",
+					"truth": "Ryumin's witnesses",
+					"truth_acquisition": "Izmailov's lie?",
+					"shootable": true,
+					"time": 2.667,
+					"route": {
+						"type": "rectangle",
+						"width": "66",
+						"height": "89",
+						"speed": "56",
+						"direction": 1
+					},
+					"start_position": {
+						"x": "669",
+						"y": "759"
+					}
+				},
+				{
+					"character": "S",
+					"text": "Or you being on my ship, for that matter.",
+					"truth": "Ryumin's witnesses",
+					"truth_acquisition": "Izmailov's absence?",
+					"shootable": true,
+					"time": 2.278,
+					"route": {
+						"type": "circle",
+						"size": "70",
+						"speed": "42",
+						"direction": 1
+					},
+					"start_position": {
+						"x": "739",
+						"y": "534"
+					}
+				},
+				{
+					"character": "S",
+					"text": "Maybe you were one of my less significant crewmen?",
+					"truth": "Ryumin's witnesses",
+					"truth_acquisition": "Izmailov's obscurity?",
+					"shootable": true,
+					"time": 2.778,
+					"route": {
+						"type": "rectangle",
+						"width": "210",
+						"height": "212",
+						"speed": "64",
+						"direction": -1
+					},
+					"start_position": {
+						"x": "1218",
+						"y": "611"
+					}
+				},
+				{
+					"character": "I",
+					"text": "Preposterous!",
+					"truth": "",
+					"truth_acquisition": "",
+					"shootable": false,
+					"time": 1,
+					"route": {
+						"type": "circle",
+						"size": "256",
+						"speed": "52",
+						"direction": -1
+					},
+					"start_position": {
+						"x": "800",
+						"y": "721"
+					}
+				},
+				{
+					"character": "R",
+					"text": "We all witnessed it happen!",
+					"truth": "",
+					"truth_acquisition": "Ryumin's witnesses",
+					"shootable": true,
+					"time": 1.68,
+					"route": {
+						"type": "rectangle",
+						"width": "164",
+						"height": "152",
+						"speed": "53",
+						"direction": 1
+					},
+					"start_position": {
+						"x": "1343",
+						"y": "561"
+					}
+				},
+				{
+					"character": "R",
+					"text": "None of us wanted to leave them stranded!",
+					"truth": "",
+					"truth_acquisition": "",
+					"shootable": false,
+					"time": 2.278,
+					"route": {
+						"type": "circle",
+						"size": "299",
+						"speed": "63",
+						"direction": 1
+					},
+					"start_position": {
+						"x": "1246",
+						"y": "788"
+					}
+				},
+				{
+					"character": "R",
+					"text": "We begged the Captain...",
+					"truth": "",
+					"truth_acquisition": "",
+					"shootable": false,
+					"time": 1.6,
+					"route": {
+						"type": "rectangle",
+						"width": "183",
+						"height": "184",
+						"speed": "53",
+						"direction": -1
+					},
+					"start_position": {
+						"x": "1180",
+						"y": "422"
+					}
+				},
+				{
+					"character": "R",
+					"text": "But he didn't budge.",
+					"truth": "",
+					"truth_acquisition": "Heartless captain",
+					"shootable": true,
+					"time": 1.333,
+					"route": {
+						"type": "rectangle",
+						"width": "225",
+						"height": "120",
+						"speed": "46",
+						"direction": -1
+					},
+					"start_position": {
+						"x": "626",
+						"y": "838"
+					}
+				},
+				{
+					"character": "B",
+					"text": "I had to make an example!",
+					"truth": "",
+					"truth_acquisition": "",
+					"shootable": false,
+					"time": 1.667,
+					"route": {
+						"type": "circle",
+						"size": "206",
+						"speed": "48",
+						"direction": -1
+					},
+					"start_position": {
+						"x": "598",
+						"y": "664"
+					}
+				},
+				{
+					"character": "B",
+					"text": "No one threatens mutiny on my ship!",
+					"truth": "",
+					"truth_acquisition": "",
+					"shootable": false,
+					"time": 1.944,
+					"route": {
+						"type": "rectangle",
+						"width": "279",
+						"height": "211",
+						"speed": "60",
+						"direction": -1
+					},
+					"start_position": {
+						"x": "974",
+						"y": "575"
+					}
+				}
+			],
+			"incorrect_dialogue": [
+				{
+					"character": "B",
+					"text": "What, you don't believe me?",
+					"time": 4
+				},
+				{
+					"character": "R",
+					"text": "I know what I saw!",
+					"time": 4
+				},
+				{
+					"character": "S",
+					"text": "Yes. And?",
+					"time": 3
+				}
+			],
+			"restart_dialogue": [
+				{
+					"character": "R",
+					"text": "Izmailov wasn't the Captain.",
+					"time": 3
+				}
+			],
+			"end_bubbles": [
+				{
+					"text": "Stepanov, sir...",
+					"time": "2"
+				},
+				{
+					"text": "I'm afraid that's not possible.",
+					"time": "3"
+				},
+				{
+					"text": "We have a confirmation that the Baron was in charge.",
+					"time": "5"
+				},
+				{
+					"text": "You're attempting to claim his actions for yourself!",
+					"time": "5"
+				},
+				{
+					"text": "Which brings us to another question...",
+					"time": "3"
 				}
 			]
 		}
