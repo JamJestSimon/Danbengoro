@@ -5,3 +5,4 @@ res://nodes/crosshair.tscn
 res://scripts/crosshair.gd
 res://scripts/bubble.gd
 res://scripts/shooting_stage_controller.gd
+res://data/shooting_stage_data.json

@@ -27,6 +27,7 @@ func _ready() -> void:
 	pass
 
 func start_stage() -> void:
+	bullet_chamber.visible = false
 	crosshair.visible = false
 	title.text = jsonData["stages"][stage]["title"]
 	var tween1 = get_tree().create_tween()
@@ -44,6 +45,7 @@ func start_stage() -> void:
 func restart_stage() -> void:
 	bubble = 0
 	crosshair.visible = true
+	bullet_chamber.visible = true
 	spawn_bubble()
 
 func spawn_bubble() -> void:
