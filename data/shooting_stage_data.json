@@ -2269,6 +2269,342 @@
 					"time": "4"
 				}
 			]
+		},
+		{
+			"title": "What proves Benyovsky's presence in Japan?",
+			"bullets": [
+				"Attorney's Badge",
+				"Attorney's Badge",
+				"Attorney's Badge"
+			],
+			"bubbles": [
+				{
+					"character": "B",
+					"text": "I have proof!",
+					"truth": "",
+					"truth_acquisition": "",
+					"shootable": false,
+					"time": 1,
+					"route": {
+						"type": "rectangle",
+						"width": "124",
+						"height": "40",
+						"speed": "56",
+						"direction": 1
+					},
+					"start_position": {
+						"x": "658",
+						"y": "362"
+					}
+				},
+				{
+					"character": "B",
+					"text": "I mean that the Dutch have it!",
+					"truth": "",
+					"truth_acquisition": "",
+					"shootable": false,
+					"time": 1.68,
+					"route": {
+						"type": "circle",
+						"size": "140",
+						"speed": "48",
+						"direction": 1
+					},
+					"start_position": {
+						"x": "774",
+						"y": "293"
+					}
+				},
+				{
+					"character": "B",
+					"text": "Once we departed, I prepared several letters.",
+					"truth": "Hanbengoro's Letter",
+					"truth_acquisition": "Benyovsky's Letters",
+					"shootable": true,
+					"time": 2.5,
+					"route": {
+						"type": "rectangle",
+						"width": "99",
+						"height": "61",
+						"speed": "68",
+						"direction": 1
+					},
+					"start_position": {
+						"x": "986",
+						"y": "752"
+					}
+				},
+				{
+					"character": "B",
+					"text": "They contained details of our visit.",
+					"truth": "",
+					"truth_acquisition": "",
+					"shootable": false,
+					"time": 2,
+					"route": {
+						"type": "circle",
+						"size": "156",
+						"speed": "44",
+						"direction": -1
+					},
+					"start_position": {
+						"x": "736",
+						"y": "639"
+					}
+				},
+				{
+					"character": "B",
+					"text": "I handed them over at our next stop.",
+					"truth": "",
+					"truth_acquisition": "",
+					"shootable": false,
+					"time": 2,
+					"route": {
+						"type": "circle",
+						"size": "117",
+						"speed": "55",
+						"direction": 1
+					},
+					"start_position": {
+						"x": "949",
+						"y": "608"
+					}
+				},
+				{
+					"character": "B",
+					"text": "The Dutch can attest I set foot on that island.",
+					"truth": "",
+					"truth_acquisition": "",
+					"shootable": false,
+					"time": 2.611,
+					"route": {
+						"type": "rectangle",
+						"width": "294",
+						"height": "74",
+						"speed": "57",
+						"direction": 1
+					},
+					"start_position": {
+						"x": "993",
+						"y": "673"
+					}
+				},
+				{
+					"character": "I",
+					"text": "Letters... about Japan...",
+					"truth": "",
+					"truth_acquisition": "",
+					"shootable": false,
+					"time": 1.667,
+					"route": {
+						"type": "circle",
+						"size": "287",
+						"speed": "47",
+						"direction": 1
+					},
+					"start_position": {
+						"x": "1018",
+						"y": "738"
+					}
+				},
+				{
+					"character": "I",
+					"text": "The Dutch don't have them.",
+					"truth": "",
+					"truth_acquisition": "",
+					"shootable": false,
+					"time": 1.68,
+					"route": {
+						"type": "rectangle",
+						"width": "271",
+						"height": "245",
+						"speed": "63",
+						"direction": -1
+					},
+					"start_position": {
+						"x": "943",
+						"y": "565"
+					}
+				},
+				{
+					"character": "I",
+					"text": "The Japanese do.",
+					"truth": "",
+					"truth_acquisition": "",
+					"shootable": false,
+					"time": 1.067,
+					"route": {
+						"type": "circle",
+						"size": "117",
+						"speed": "55",
+						"direction": 1
+					},
+					"start_position": {
+						"x": "949",
+						"y": "608"
+					}
+				},
+				{
+					"character": "I",
+					"text": "A certain Hanbengoro really threw a spanner in the works.",
+					"truth": "",
+					"truth_acquisition": "",
+					"shootable": false,
+					"time": 3.04,
+					"route": {
+						"type": "circle",
+						"size": "244",
+						"speed": "56",
+						"direction": 1
+					},
+					"start_position": {
+						"x": "1201",
+						"y": "557"
+					}
+				},
+				{
+					"character": "I",
+					"text": "Next year Russia will attack Japan from the north.",
+					"truth": "",
+					"truth_acquisition": "Hanbengoro's Letter",
+					"shootable": true,
+					"time": 2.889,
+					"route": {
+						"type": "rectangle",
+						"width": "287",
+						"height": "237",
+						"speed": "65",
+						"direction": 1
+					},
+					"start_position": {
+						"x": "1274",
+						"y": "389"
+					}
+				},
+				{
+					"character": "I",
+					"text": "Ring a bell?",
+					"truth": "",
+					"truth_acquisition": "",
+					"shootable": false,
+					"time": 1,
+					"route": {
+						"type": "circle",
+						"size": "244",
+						"speed": "56",
+						"direction": 1
+					},
+					"start_position": {
+						"x": "1201",
+						"y": "557"
+					}
+				},
+				{
+					"character": "I",
+					"text": "Thanks to your little adventure,",
+					"truth": "",
+					"truth_acquisition": "",
+					"shootable": false,
+					"time": 1.778,
+					"route": {
+						"type": "rectangle",
+						"width": "66",
+						"height": "89",
+						"speed": "56",
+						"direction": 1
+					},
+					"start_position": {
+						"x": "669",
+						"y": "759"
+					}
+				},
+				{
+					"character": "I",
+					"text": "we Russians can no longer sail near Japan.",
+					"truth": "",
+					"truth_acquisition": "Russian limitations",
+					"shootable": true,
+					"time": 2.333,
+					"route": {
+						"type": "circle",
+						"size": "70",
+						"speed": "42",
+						"direction": 1
+					},
+					"start_position": {
+						"x": "739",
+						"y": "534"
+					}
+				},
+				{
+					"character": "B",
+					"text": "I have no idea what you're talking about.",
+					"truth": "",
+					"truth_acquisition": "",
+					"shootable": false,
+					"time": 2.278,
+					"route": {
+						"type": "rectangle",
+						"width": "210",
+						"height": "212",
+						"speed": "64",
+						"direction": -1
+					},
+					"start_position": {
+						"x": "1218",
+						"y": "611"
+					}
+				}
+			],
+			"incorrect_dialogue": [
+				{
+					"character": "B",
+					"text": "That has nothing to do with me!",
+					"time": 4
+				},
+				{
+					"character": "I",
+					"text": "Just do the deed, man!",
+					"time": 3
+				}
+			],
+			"restart_dialogue": [
+				{
+					"character": "I",
+					"text": "This is your one and only chance.",
+					"time": 3
+				}
+			],
+			"end_bubbles": [
+				{
+					"text": "Baron Benyovsky...",
+					"time": "2"
+				},
+				{
+					"text": "or should I say, \"Hanbengoro\",",
+					"time": "3"
+				},
+				{
+					"text": "in the name of Her Imperial Majesty,",
+					"time": "4"
+				},
+				{
+					"text": "you are under arrest",
+					"time": "2"
+				},
+				{
+					"text": "for the murder of governor Grigorii Nilov",
+					"time": "4"
+				},
+				{
+					"text": "as well as acts of terrorism",
+					"time": "3"
+				},
+				{
+					"text": "threatening relations between the nations of Russia and Japan.",
+					"time": "5"
+				}
+			]
 		}
 	]
 }
