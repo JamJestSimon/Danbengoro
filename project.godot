@@ -11,7 +11,7 @@ config_version=5
 [application]
 
 config/name="Danbengoro"
-run/main_scene="res://scenes/shooting_stage.tscn"
+run/main_scene="res://MainMenu/main_menu.tscn"
 config/features=PackedStringArray("4.3", "GL Compatibility")
 config/icon="res://icon.svg"
 
@@ -25,6 +25,12 @@ window/size/mode=2
 
 version_control/plugin_name="GitPlugin"
 version_control/autoload_on_startup=true
+
+[file_customization]
+
+folder_colors={
+"res://MainMenu/": "green"
+}
 
 [input]
 

@@ -1,0 +1,55 @@
+[gd_scene load_steps=4 format=3 uid="uid://w8or6ox7es0v"]
+
+[ext_resource type="Script" path="res://MainMenu/main_menu.gd" id="1_yb0qn"]
+[ext_resource type="PackedScene" uid="uid://doolfp234vakd" path="res://scenes/shooting_stage.tscn" id="2_eg4eb"]
+[ext_resource type="Texture2D" uid="uid://bvl1g0c4otwvc" path="res://MainMenu/MainMenuImage.png" id="3_th874"]
+
+[node name="MainMenu" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_yb0qn")
+gameScene = ExtResource("2_eg4eb")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+z_index = -10
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("3_th874")
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 0
+offset_left = 1058.0
+offset_top = 119.0
+offset_right = 1811.0
+offset_bottom = 316.0
+theme_override_font_sizes/font_size = 144
+text = "dangerbonger"
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+layout_mode = 0
+offset_left = 1189.0
+offset_top = 659.0
+offset_right = 1649.0
+offset_bottom = 897.0
+theme_override_constants/separation = 24
+
+[node name="Start" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 72
+text = "Start"
+
+[node name="Quit" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 72
+text = "Quit"
+
+[connection signal="button_down" from="VBoxContainer/Start" to="." method="_on_start_button_down"]
+[connection signal="button_down" from="VBoxContainer/Quit" to="." method="_on_quit_button_down"]
