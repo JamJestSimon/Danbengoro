@@ -18,7 +18,6 @@ var jsonData = {}
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
-	speaker.visible = false
 	speechbox.visible = false
 	var data = FileAccess.open("res://data/shooting_stage_data.json", FileAccess.READ)
 	jsonData = JSON.parse_string(data.get_as_text())
@@ -31,12 +30,12 @@ func start_stage() -> void:
 	crosshair.visible = false
 	title.text = jsonData["stages"][stage]["title"]
 	var tween1 = get_tree().create_tween()
-	tween1.tween_property(title, "modulate", Color(1, 1, 1 , 1), 1.0)
+	tween1.tween_property(title, "modulate", Color(1, 1, 1 , 1), 0.2)
 	await tween1.finished
-	var timer = get_tree().create_timer(5.0)
+	var timer = get_tree().create_timer(3.0)
 	await timer.timeout
 	var tween2 = get_tree().create_tween()
-	tween2.tween_property(title, "modulate", Color(1, 1, 1 , 0), 1.0)
+	tween2.tween_property(title, "modulate", Color(1, 1, 1 , 0), 0.2)
 	await tween2.finished
 	bullet_chamber.call_deferred("set_truths", jsonData["stages"][stage]["bullets"])
 	restart_stage()

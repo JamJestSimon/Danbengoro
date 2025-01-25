@@ -9,6 +9,8 @@ size = Vector2(30, 30)
 [node name="Crosshair" type="Sprite2D"]
 texture = SubResource("PlaceholderTexture2D_cdwud")
 script = ExtResource("1_x283m")
+anim_scale = Vector2(1.1, 1.1)
+anim_trans = 9
 
 [node name="Area2D" type="Area2D" parent="."]
 

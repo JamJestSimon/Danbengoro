@@ -1,8 +1,9 @@
-[gd_scene load_steps=8 format=3 uid="uid://c5t8qb11rlbaa"]
+[gd_scene load_steps=9 format=3 uid="uid://c5t8qb11rlbaa"]
 
 [ext_resource type="Script" path="res://scripts/bubble.gd" id="1_1vj7v"]
 [ext_resource type="Texture2D" uid="uid://diucv1vsghm7s" path="res://sprites/Bubble.png" id="2_hw7ot"]
 [ext_resource type="Script" path="res://scripts/bubble_move.gd" id="2_oeffu"]
+[ext_resource type="Texture2D" uid="uid://vdldbcpd3336" path="res://sprites/SmallBubble.png" id="4_rmxih"]
 
 [sub_resource type="Curve2D" id="Curve2D_sq61q"]
 
@@ -16,13 +17,13 @@ outline_size = 10
 outline_color = Color(0, 0, 0, 1)
 
 [sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_ply0t"]
-lifetime_randomness = 0.1
+lifetime_randomness = 0.2
 particle_flag_disable_z = true
 emission_shape = 1
 emission_sphere_radius = 10.0
 spread = 180.0
-initial_velocity_min = 50.0
-initial_velocity_max = 50.0
+initial_velocity_min = 100.0
+initial_velocity_max = 100.0
 gravity = Vector3(0, -10, 0)
 
 [node name="Path2D" type="Path2D" node_paths=PackedStringArray("label", "sprite", "particle_emmiter")]
@@ -71,11 +72,10 @@ vertical_alignment = 1
 autowrap_mode = 2
 
 [node name="GPUParticles2D" type="GPUParticles2D" parent="PathFollow2D/Bubble"]
-scale = Vector2(1, 1)
 emitting = false
 amount = 20
 process_material = SubResource("ParticleProcessMaterial_ply0t")
-texture = ExtResource("2_hw7ot")
-lifetime = 2.0
+texture = ExtResource("4_rmxih")
+lifetime = 3.0
 one_shot = true
 explosiveness = 1.0

@@ -14,7 +14,7 @@ var player_bubble: bool = false
 func _ready() -> void:
 	self.modulate = Color(1, 1, 1, 0)
 	var tween = get_tree().create_tween()
-	tween.tween_property(self, "modulate", Color(1, 1, 1, 1), 1.0).set_trans(Tween.TRANS_SINE)
+	tween.tween_property(self, "modulate", Color(1, 1, 1, 1), 0.2).set_trans(Tween.TRANS_SINE)
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
@@ -23,7 +23,7 @@ func _process(delta: float) -> void:
 		if time_to_live <= 0 and not dying:
 			dying = true
 			var tween = get_tree().create_tween()
-			tween.tween_property(self, "modulate", Color(1, 1, 1, 0), 1.0).set_trans(Tween.TRANS_SINE)
+			tween.tween_property(self, "modulate", Color(1, 1, 1, 0), 0.2).set_trans(Tween.TRANS_SINE)
 			await tween.finished
 			if not player_bubble:
 				get_parent().call_deferred("next_bubble")
@@ -37,23 +37,25 @@ func set_player():
 
 func pop_correct():
 	#anim goes here
-	dying = true
-	get_parent().call_deferred("on_correct_bubble_destoryed")
-	particle_emmiter.reparent(self)
-	sprite.call_deferred("free")
-	particle_emmiter.emitting = true
-	await particle_emmiter.finished
-	self.call_deferred("free")
+	if not dying:
+		dying = true
+		get_parent().call_deferred("on_correct_bubble_destoryed")
+		particle_emmiter.reparent(self)
+		sprite.call_deferred("free")
+		particle_emmiter.emitting = true
+		await particle_emmiter.finished
+		self.call_deferred("free")
 
 func pop_incorrect():
 	#anim goes here
-	dying = true
-	get_parent().call_deferred("on_incorrect_bubble_destoryed")
-	particle_emmiter.reparent(self)
-	sprite.call_deferred("free")
-	particle_emmiter.emitting = true
-	await particle_emmiter.finished
-	self.call_deferred("free")
+	if not dying:
+		dying = true
+		get_parent().call_deferred("on_incorrect_bubble_destoryed")
+		particle_emmiter.reparent(self)
+		sprite.call_deferred("free")
+		particle_emmiter.emitting = true
+		await particle_emmiter.finished
+		self.call_deferred("free")
 
 func set_start_pos(value: Vector2):
 	self.position = value
