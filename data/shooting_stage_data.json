@@ -942,7 +942,7 @@
 			]
 		},
 		{
-			"title": "Whatever happened to governor Nilov?",
+			"title": "Who was the real captain?",
 			"bullets": [
 				"Hanbengoro's Letter C",
 				"Updatier Autopsy Report",
@@ -1365,6 +1365,415 @@
 				{
 					"text": "Which brings us to another question...",
 					"time": "3"
+				}
+			]
+		},
+		{
+			"title": "Did the ship really go to America?",
+			"bullets": [
+				"Hanbengoro's Letter D",
+				"Updatest Autopsy Report",
+				"Attorney's Badge"
+			],
+			"bubbles": [
+				{
+					"character": "B",
+					"text": "Yes! A thousands times yes!",
+					"truth": "",
+					"truth_acquisition": "",
+					"shootable": false,
+					"time": 1.68,
+					"route": {
+						"type": "rectangle",
+						"width": "124",
+						"height": "40",
+						"speed": "56",
+						"direction": 1
+					},
+					"start_position": {
+						"x": "658",
+						"y": "362"
+					}
+				},
+				{
+					"character": "R",
+					"text": "A storm blew us off-course, so I had no idea where I was.",
+					"truth": "",
+					"truth_acquisition": "Ryumin's cluelessness",
+					"shootable": true,
+					"time": 3.04,
+					"route": {
+						"type": "circle",
+						"size": "140",
+						"speed": "48",
+						"direction": 1
+					},
+					"start_position": {
+						"x": "774",
+						"y": "293"
+					}
+				},
+				{
+					"character": "B",
+					"text": "Did you already forget?",
+					"truth": "",
+					"truth_acquisition": "",
+					"shootable": false,
+					"time": 1.533,
+					"route": {
+						"type": "rectangle",
+						"width": "99",
+						"height": "61",
+						"speed": "68",
+						"direction": 1
+					},
+					"start_position": {
+						"x": "986",
+						"y": "752"
+					}
+				},
+				{
+					"character": "B",
+					"text": "We disposed of Izmaylov on the very island…",
+					"truth": "",
+					"truth_acquisition": "",
+					"shootable": false,
+					"time": 2.389,
+					"route": {
+						"type": "circle",
+						"size": "156",
+						"speed": "44",
+						"direction": -1
+					},
+					"start_position": {
+						"x": "736",
+						"y": "639"
+					}
+				},
+				{
+					"character": "B",
+					"text": "where Captain Bering lay buried!",
+					"truth": "",
+					"truth_acquisition": "",
+					"shootable": false,
+					"time": 1.778,
+					"route": {
+						"type": "circle",
+						"size": "117",
+						"speed": "55",
+						"direction": 1
+					},
+					"start_position": {
+						"x": "949",
+						"y": "608"
+					}
+				},
+				{
+					"character": "B",
+					"text": "The Bering Island! North-east of Kamchatka!",
+					"truth": "Baron's incompetence",
+					"truth_acquisition": "Bering Island",
+					"shootable": true,
+					"time": 2.389,
+					"route": {
+						"type": "rectangle",
+						"width": "294",
+						"height": "74",
+						"speed": "57",
+						"direction": 1
+					},
+					"start_position": {
+						"x": "993",
+						"y": "673"
+					}
+				},
+				{
+					"character": "B",
+					"text": "Or dare you claim that it was elsewhere?",
+					"truth": "",
+					"truth_acquisition": "",
+					"shootable": false,
+					"time": 2.222,
+					"route": {
+						"type": "circle",
+						"size": "287",
+						"speed": "47",
+						"direction": 1
+					},
+					"start_position": {
+						"x": "1018",
+						"y": "738"
+					}
+				},
+				{
+					"character": "I",
+					"text": "Pfft, Bering Island?",
+					"truth": "",
+					"truth_acquisition": "",
+					"shootable": false,
+					"time": 1.333,
+					"route": {
+						"type": "rectangle",
+						"width": "271",
+						"height": "245",
+						"speed": "63",
+						"direction": -1
+					},
+					"start_position": {
+						"x": "943",
+						"y": "565"
+					}
+				},
+				{
+					"character": "I",
+					"text": "You wouldn't be able to pinpoint your location... ",
+					"truth": "",
+					"truth_acquisition": "",
+					"shootable": false,
+					"time": 2.722,
+					"route": {
+						"type": "circle",
+						"size": "117",
+						"speed": "55",
+						"direction": 1
+					},
+					"start_position": {
+						"x": "949",
+						"y": "608"
+					}
+				},
+				{
+					"character": "I",
+					"text": "even if it was written on a mountain!",
+					"truth": "",
+					"truth_acquisition": "",
+					"shootable": false,
+					"time": 2.056,
+					"route": {
+						"type": "circle",
+						"size": "244",
+						"speed": "56",
+						"direction": 1
+					},
+					"start_position": {
+						"x": "1201",
+						"y": "557"
+					}
+				},
+				{
+					"character": "R",
+					"text": "It's true that I don't remember going eastward....",
+					"truth": "",
+					"truth_acquisition": "",
+					"shootable": false,
+					"time": 2.778,
+					"route": {
+						"type": "rectangle",
+						"width": "287",
+						"height": "237",
+						"speed": "65",
+						"direction": 1
+					},
+					"start_position": {
+						"x": "1274",
+						"y": "389"
+					}
+				},
+				{
+					"character": "I",
+					"text": "Marikan Island. That's where you left us to rot.",
+					"truth": "",
+					"truth_acquisition": "",
+					"shootable": false,
+					"time": 2.667,
+					"route": {
+						"type": "circle",
+						"size": "244",
+						"speed": "56",
+						"direction": 1
+					},
+					"start_position": {
+						"x": "1201",
+						"y": "557"
+					}
+				},
+				{
+					"character": "I",
+					"text": "One of the Kurils, south of Kamchatka, you lying dog.",
+					"truth": "",
+					"truth_acquisition": "",
+					"shootable": false,
+					"time": 2.9,
+					"route": {
+						"type": "rectangle",
+						"width": "66",
+						"height": "89",
+						"speed": "56",
+						"direction": 1
+					},
+					"start_position": {
+						"x": "669",
+						"y": "759"
+					}
+				},
+				{
+					"character": "B",
+					"text": "And how can you be so sure?",
+					"truth": "",
+					"truth_acquisition": "",
+					"shootable": false,
+					"time": 1.68,
+					"route": {
+						"type": "circle",
+						"size": "70",
+						"speed": "42",
+						"direction": 1
+					},
+					"start_position": {
+						"x": "739",
+						"y": "534"
+					}
+				},
+				{
+					"character": "I",
+					"text": "Because unlike you, I know how to use a compass!",
+					"truth": "",
+					"truth_acquisition": "Baron's incompetence",
+					"shootable": true,
+					"time": 2.667,
+					"route": {
+						"type": "rectangle",
+						"width": "210",
+						"height": "212",
+						"speed": "64",
+						"direction": -1
+					},
+					"start_position": {
+						"x": "1218",
+						"y": "611"
+					}
+				},
+				{
+					"character": "I",
+					"text": "I learned of those islands from the traders who saved me.",
+					"truth": "",
+					"truth_acquisition": "",
+					"shootable": false,
+					"time": 3.04,
+					"route": {
+						"type": "circle",
+						"size": "256",
+						"speed": "52",
+						"direction": -1
+					},
+					"start_position": {
+						"x": "800",
+						"y": "721"
+					}
+				},
+				{
+					"character": "I",
+					"text": "I wouldn't dare doubt them. Would you?",
+					"truth": "",
+					"truth_acquisition": "",
+					"shootable": false,
+					"time": 2.111,
+					"route": {
+						"type": "rectangle",
+						"width": "164",
+						"height": "152",
+						"speed": "53",
+						"direction": 1
+					},
+					"start_position": {
+						"x": "1343",
+						"y": "561"
+					}
+				},
+				{
+					"character": "R",
+					"text": "But why would our Captain lie about it?",
+					"truth": "Baron's incompetence",
+					"truth_acquisition": "Lack of reason",
+					"shootable": true,
+					"time": 2.167,
+					"route": {
+						"type": "circle",
+						"size": "299",
+						"speed": "63",
+						"direction": 1
+					},
+					"start_position": {
+						"x": "1246",
+						"y": "788"
+					}
+				},
+				{
+					"character": "S",
+					"text": "I didn't. I never said we sailed east.",
+					"truth": "",
+					"truth_acquisition": "Stepanov's account",
+					"shootable": true,
+					"time": 2.111,
+					"route": {
+						"type": "rectangle",
+						"width": "183",
+						"height": "184",
+						"speed": "53",
+						"direction": -1
+					},
+					"start_position": {
+						"x": "1180",
+						"y": "422"
+					}
+				},
+				{
+					"character": "B",
+					"text": "Enough with your false claims!",
+					"truth": "",
+					"truth_acquisition": "",
+					"shootable": false,
+					"time": 1.68,
+					"route": {
+						"type": "rectangle",
+						"width": "225",
+						"height": "120",
+						"speed": "46",
+						"direction": -1
+					},
+					"start_position": {
+						"x": "626",
+						"y": "838"
+					}
+				}
+			],
+			"restart_dialogue": [
+				{
+					"character": "S",
+					"text": "I know darn well we didn't go east.",
+					"time": 3
+				}
+			],
+			"end_bubbles": [
+				{
+					"text": "I can think of only one reason!",
+					"time": "3"
+				},
+				{
+					"text": "Captain Benyovsky...",
+					"time": "2"
+				},
+				{
+					"text": "you lied about your location to claim to be a skilled explorer...",
+					"time": "5"
+				},
+				{
+					"text": "to hide that you were completely lost on the sea!",
+					"time": "4"
+				},
+				{
+					"text": "And that means that whever happened next was also a fabrication!",
+					"time": "5"
 				}
 			]
 		}
