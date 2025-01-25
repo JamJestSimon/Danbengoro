@@ -1,11 +1,11 @@
-Label
+CanvasLayer
 TextureRect
+Label
 RichTextLabel
 Sprite2D
 PathFollow2D
 Path2D
 CenterContainer
-CanvasLayer
 Control
 Node
 VBoxContainer
