@@ -24,8 +24,9 @@ func set_truths(new_truths: Array):
 	crosshair.call_deferred("set_truth", truths[selected_truth])
 
 func set_special_truth(value: String):
-	special_truth = value
-	bullets[selected_truth].text = special_truth
+	if value != "":
+		special_truth = value
+		bullets[selected_truth].text = special_truth
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:

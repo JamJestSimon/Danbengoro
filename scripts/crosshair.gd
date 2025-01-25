@@ -8,7 +8,6 @@ var selected_truth: String
 func _ready() -> void:
 	child_area = get_child(0) as Area2D
 	Input.set_mouse_mode(Input.MOUSE_MODE_HIDDEN)
-	pass # Replace with function body.
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
@@ -36,6 +35,7 @@ func _input(event: InputEvent) -> void:
 			var areas = child_area.get_overlapping_areas()
 			for area in areas:
 				var parent = area.get_parent() as Sprite2D
-				var truth = parent.get_meta("truth_aquisition") as String
-				selected_truth = truth
-				bullet_chamber.call_deferred("set_special_truth", truth)
+				if parent.get_meta("shootable") == true:
+					var truth = parent.get_meta("truth_acquisition") as String
+					selected_truth = truth
+					bullet_chamber.call_deferred("set_special_truth", truth)

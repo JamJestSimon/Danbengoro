@@ -23,6 +23,8 @@ texture = SubResource("PlaceholderTexture2D_6xlif")
 script = ExtResource("2_oeffu")
 root = NodePath("../..")
 metadata/truth = ""
+metadata/shootable = false
+metadata/truth_acquisition = ""
 
 [node name="Area2D" type="Area2D" parent="PathFollow2D/Bubble"]
 
