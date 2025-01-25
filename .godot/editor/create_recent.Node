@@ -1,7 +1,8 @@
+RichTextLabel
+Sprite2D
+Label
 PathFollow2D
 Path2D
-Label
-RichTextLabel
 CenterContainer
 CanvasLayer
 Control
@@ -10,5 +11,4 @@ TextureRect
 VBoxContainer
 CollisionShape2D
 Area2D
-Sprite2D
 Node2D

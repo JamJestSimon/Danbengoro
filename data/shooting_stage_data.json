@@ -13,8 +13,8 @@
 					"character": "B",
 					"truth": "Truth 1",
 					"start_position": {
-						"x": 100,
-						"y": 200
+						"x": 400,
+						"y": 400
 					},
 					"route": {
 						"type": "circle",
@@ -30,8 +30,8 @@
 					"shootable": false,
 					"character": "I",
 					"start_position": {
-						"x": 300,
-						"y": 400
+						"x": 600,
+						"y": 600
 					},
 					"route": {
 						"type": "rectangle",

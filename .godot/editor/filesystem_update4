@@ -6,3 +6,5 @@ res://scripts/shooting_stage_controller.gd
 res://data/shooting_stage_data.json
 res://scripts/bullet_chamber.gd
 res://scripts/crosshair.gd
+res://nodes/bullet.tscn
+res://nodes/crosshair.tscn

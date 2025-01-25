@@ -7,13 +7,27 @@ var type: String
 var size: Vector2
 var exists: bool = false
 var time_to_live: float
+var dying: bool = false
+var player_bubble: bool = false
+
+func _ready() -> void:
+	self.modulate = Color(1, 1, 1, 0)
+	var tween = get_tree().create_tween()
+	tween.tween_property(self, "modulate", Color(1, 1, 1, 1), 1.0).set_trans(Tween.TRANS_SINE)
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
 	if exists:
 		time_to_live -= delta
-		if time_to_live <= 0:
-			get_parent().call_deferred("next_bubble")
+		if time_to_live <= 0 and not dying:
+			dying = true
+			var tween = get_tree().create_tween()
+			tween.tween_property(self, "modulate", Color(1, 1, 1, 0), 1.0).set_trans(Tween.TRANS_SINE)
+			await tween.finished
+			if not player_bubble:
+				get_parent().call_deferred("next_bubble")
+			else:
+				get_parent().call_deferred("next_player_bubble")
 			self.call_deferred("free")
 	pass
 

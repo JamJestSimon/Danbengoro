@@ -4,13 +4,16 @@
 [ext_resource type="Script" path="res://scripts/bullet_chamber.gd" id="2_jch3p"]
 [ext_resource type="PackedScene" uid="uid://cr4mqugse8mpm" path="res://nodes/crosshair.tscn" id="3_on5vh"]
 
-[node name="Node2D" type="Node2D" node_paths=PackedStringArray("bullet_chamber")]
+[node name="Node2D" type="Node2D" node_paths=PackedStringArray("bullet_chamber", "title", "speaker", "speechbox")]
 script = ExtResource("1_6nfw1")
-bullet_chamber = NodePath("CanvasLayer/VBoxContainer")
+bullet_chamber = NodePath("CanvasLayer/BulletChamber")
+title = NodePath("CanvasLayer/Title")
+speaker = NodePath("Speaker")
+speechbox = NodePath("CanvasLayer/SpeechBox")
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 
-[node name="VBoxContainer" type="VBoxContainer" parent="CanvasLayer" node_paths=PackedStringArray("crosshair")]
+[node name="BulletChamber" type="VBoxContainer" parent="CanvasLayer" node_paths=PackedStringArray("crosshair")]
 anchors_preset = 2
 anchor_top = 1.0
 anchor_bottom = 1.0
@@ -21,5 +24,20 @@ script = ExtResource("2_jch3p")
 truths = Array[String](["Truth 1", "Truth 2", "Truth 3"])
 crosshair = NodePath("../../Crosshair")
 
+[node name="Title" type="Label" parent="CanvasLayer"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="SpeechBox" type="RichTextLabel" parent="CanvasLayer"]
+offset_right = 40.0
+offset_bottom = 40.0
+
 [node name="Crosshair" parent="." node_paths=PackedStringArray("bullet_chamber") instance=ExtResource("3_on5vh")]
-bullet_chamber = NodePath("../CanvasLayer/VBoxContainer")
+bullet_chamber = NodePath("../CanvasLayer/BulletChamber")
+
+[node name="Speaker" type="Sprite2D" parent="."]
