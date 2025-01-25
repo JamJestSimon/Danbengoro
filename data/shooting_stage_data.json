@@ -512,8 +512,8 @@
 						"character": "R",
 						"text": "Could there really have been someone like that?",
 						"truth": "Ryumin's account",
-						"truth_acquisition": "",
-						"shootable": false,
+						"truth_acquisition": "Questionable existence",
+						"shootable": true,
 						"time": "4",
 						"route": {
 							"type": "circle",
