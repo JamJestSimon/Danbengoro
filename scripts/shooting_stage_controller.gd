@@ -139,10 +139,22 @@ func on_correct_bubble_destoryed() -> void:
 	player_bubble = 0
 	spawn_player_bubble()
 
+var isTimeScaleChanged : bool = false
 func _input(event):
-	if event.is_action_pressed("SpeedUp"):
+	if event.is_action_pressed("SpeedUp") and !isTimeScaleChanged:
 		Engine.time_scale = 5.
+		isTimeScaleChanged = true
 		return
-	elif event.is_action_released("SpeedUp"):
+	elif event.is_action_released("SpeedUp") and isTimeScaleChanged:
 		Engine.time_scale = 1.
+		isTimeScaleChanged = false
+		return
+	
+	if event.is_action_pressed("SlowDown") and !isTimeScaleChanged:
+		Engine.time_scale = 0.2
+		isTimeScaleChanged = true
+		return
+	elif event.is_action_released("SlowDown") and isTimeScaleChanged:
+		Engine.time_scale = 1.
+		isTimeScaleChanged = false
 		return
