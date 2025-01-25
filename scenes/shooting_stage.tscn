@@ -1,4 +1,4 @@
-[gd_scene load_steps=10 format=3 uid="uid://doolfp234vakd"]
+[gd_scene load_steps=11 format=3 uid="uid://doolfp234vakd"]
 
 [ext_resource type="Script" path="res://scripts/shooting_stage_controller.gd" id="1_6nfw1"]
 [ext_resource type="Script" path="res://scripts/bullet_chamber.gd" id="2_jch3p"]
@@ -7,6 +7,7 @@
 [ext_resource type="Texture2D" uid="uid://dvpqgjewqx88q" path="res://sprites/Beniowski.png" id="3_stx5x"]
 [ext_resource type="Texture2D" uid="uid://1usfeoogic6i" path="res://sprites/Stiepanow.png" id="4_euknh"]
 [ext_resource type="Texture2D" uid="uid://cwk83jf4b2wp4" path="res://sprites/Riumin.png" id="5_26naj"]
+[ext_resource type="Texture2D" uid="uid://boj8wou8p2j0b" path="res://sprites/OneWhitePixel.png" id="7_roh31"]
 [ext_resource type="Texture2D" uid="uid://b4ml7rkh3gf0m" path="res://sprites/Crosshair.png" id="8_i46nt"]
 
 [sub_resource type="PlaceholderTexture2D" id="PlaceholderTexture2D_wy81u"]
@@ -53,8 +54,20 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 0
+bbcode_enabled = true
+text = "[center]This is my centered text.[/center]"
 fit_content = true
 scroll_active = false
+
+[node name="TextureRect" type="TextureRect" parent="CanvasLayer/SpeechBox"]
+modulate = Color(0, 0, 0, 0.392157)
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("7_roh31")
 
 [node name="Crosshair" parent="." node_paths=PackedStringArray("bullet_chamber") instance=ExtResource("3_on5vh")]
 z_index = 10

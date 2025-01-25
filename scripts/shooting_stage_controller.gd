@@ -18,6 +18,7 @@ var jsonData = {}
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
 	speaker.visible = false
+	speechbox.visible = false
 	var data = FileAccess.open("res://data/shooting_stage_data.json", FileAccess.READ)
 	jsonData = JSON.parse_string(data.get_as_text())
 	stages_amount = (jsonData["stages"] as Array).size()
@@ -79,7 +80,21 @@ func spawn_player_bubble() -> void:
 func next_bubble() -> void:
 	bubble += 1
 	if(bubble >= (jsonData["stages"][stage]["bubbles"] as Array).size()):
-		#dialogue here
+		#anims here
+		speechbox.visible = true
+		for dialogue in jsonData["stages"][stage]["restart_dialogue"]:
+			match dialogue["character"]:
+				"B":
+					speaker.texture = beniowski
+				"I":
+					speaker.texture = izmailow
+				"S":
+					speaker.texture = stieplanow
+				"R":
+					speaker.texture = riumin
+			speechbox.text = "[center]%s[/center]" % dialogue["text"]
+			await get_tree().create_timer(dialogue["time"]).timeout
+		speechbox.visible = false
 		restart_stage()
 	else:
 		spawn_bubble()
@@ -100,7 +115,21 @@ func end_stage() -> void:
 		start_stage()
 
 func on_incorrect_bubble_destoryed() -> void:
-	#dialogue here
+	#anims here
+	speechbox.visible = true
+	for dialogue in jsonData["stages"][stage]["incorrect_dialogue"]:
+		match dialogue["character"]:
+			"B":
+				speaker.texture = beniowski
+			"I":
+				speaker.texture = izmailow
+			"S":
+				speaker.texture = stieplanow
+			"R":
+				speaker.texture = riumin
+		speechbox.text = "[center]%s[/center]" % dialogue["text"]
+		await get_tree().create_timer(dialogue["time"]).timeout
+	speechbox.visible = false
 	restart_stage()
 
 func on_correct_bubble_destoryed() -> void:
