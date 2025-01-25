@@ -38,7 +38,7 @@ func _input(event: InputEvent) -> void:
 		if event is InputEventMouseButton and (event as InputEventMouseButton).button_index == 4 and (event as InputEventMouseButton).pressed: #down
 			if special_truth != "":
 				special_truth = ""
-				bullets[selected_truth].text = truths[selected_truth]
+				(bullets[selected_truth].get_child(0) as Label).text = truths[selected_truth]
 			bullets[selected_truth].call_deferred("on_unselected")
 			selected_truth = (selected_truth - 1) % bullets.size()
 			bullets[selected_truth].call_deferred("on_selected")
@@ -46,7 +46,7 @@ func _input(event: InputEvent) -> void:
 		elif event is InputEventMouseButton and (event as InputEventMouseButton).button_index == 5 and (event as InputEventMouseButton).pressed: #up
 			if special_truth != "":
 				special_truth = ""
-				bullets[selected_truth].text = truths[selected_truth]
+				(bullets[selected_truth].get_child(0) as Label).text = truths[selected_truth]
 			bullets[selected_truth].call_deferred("on_unselected")
 			selected_truth = (selected_truth + 1) % bullets.size()
 			bullets[selected_truth].call_deferred("on_selected")

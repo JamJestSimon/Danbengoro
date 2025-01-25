@@ -1,4 +1,4 @@
-[gd_scene load_steps=11 format=3 uid="uid://doolfp234vakd"]
+[gd_scene load_steps=10 format=3 uid="uid://doolfp234vakd"]
 
 [ext_resource type="Script" path="res://scripts/shooting_stage_controller.gd" id="1_6nfw1"]
 [ext_resource type="Script" path="res://scripts/bullet_chamber.gd" id="2_jch3p"]
@@ -10,19 +10,17 @@
 [ext_resource type="Texture2D" uid="uid://boj8wou8p2j0b" path="res://sprites/OneWhitePixel.png" id="7_roh31"]
 [ext_resource type="Texture2D" uid="uid://b4ml7rkh3gf0m" path="res://sprites/Crosshair.png" id="8_i46nt"]
 
-[sub_resource type="PlaceholderTexture2D" id="PlaceholderTexture2D_wy81u"]
-size = Vector2(1000, 1000)
-
-[node name="Node2D" type="Node2D" node_paths=PackedStringArray("bullet_chamber", "title", "speaker", "speechbox")]
+[node name="Node2D" type="Node2D" node_paths=PackedStringArray("bullet_chamber", "title", "speaker", "speechbox", "crosshair")]
 script = ExtResource("1_6nfw1")
 bullet_chamber = NodePath("CanvasLayer/BulletChamber")
 title = NodePath("CanvasLayer/Title")
-speaker = NodePath("Speaker")
+speaker = NodePath("SpeakerLayer/Speaker")
 speechbox = NodePath("CanvasLayer/SpeechBox")
 izmailow = ExtResource("2_k3cdj")
 beniowski = ExtResource("3_stx5x")
 stieplanow = ExtResource("4_euknh")
 riumin = ExtResource("5_26naj")
+crosshair = NodePath("Crosshair")
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 
@@ -75,7 +73,15 @@ z_index = 10
 texture = ExtResource("8_i46nt")
 bullet_chamber = NodePath("../CanvasLayer/BulletChamber")
 
-[node name="Speaker" type="Sprite2D" parent="."]
-z_index = -2
-position = Vector2(970, 528)
-texture = SubResource("PlaceholderTexture2D_wy81u")
+[node name="SpeakerLayer" type="CanvasLayer" parent="."]
+layer = -128
+
+[node name="Speaker" type="TextureRect" parent="SpeakerLayer"]
+z_index = -20
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3

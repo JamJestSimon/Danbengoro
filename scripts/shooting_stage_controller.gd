@@ -3,12 +3,13 @@ extends Node2D
 var bubble_node = preload("res://nodes/bubble.tscn")
 @export var bullet_chamber: Node
 @export var title: Label
-@export var speaker: Sprite2D
+@export var speaker: TextureRect
 @export var speechbox: RichTextLabel
 @export var izmailow: Texture
 @export var beniowski: Texture
 @export var stieplanow: Texture
 @export var riumin: Texture
+@export var crosshair: Sprite2D
 var stage = 0
 var bubble = 0
 var player_bubble = 0
@@ -23,11 +24,11 @@ func _ready() -> void:
 	jsonData = JSON.parse_string(data.get_as_text())
 	stages_amount = (jsonData["stages"] as Array).size()
 	title.modulate = Color(1, 1, 1, 0)
-	speaker.position = Vector2(get_viewport_rect().size.x / 2, get_viewport_rect().size.y - 500)
 	self.call_deferred("start_stage")
 	pass
 
 func start_stage() -> void:
+	crosshair.visible = false
 	title.text = jsonData["stages"][stage]["title"]
 	var tween1 = get_tree().create_tween()
 	tween1.tween_property(title, "modulate", Color(1, 1, 1 , 1), 1.0)
@@ -43,6 +44,7 @@ func start_stage() -> void:
 
 func restart_stage() -> void:
 	bubble = 0
+	crosshair.visible = true
 	spawn_bubble()
 
 func spawn_bubble() -> void:
@@ -116,6 +118,7 @@ func end_stage() -> void:
 
 func on_incorrect_bubble_destoryed() -> void:
 	#anims here
+	crosshair.visible = false
 	speechbox.visible = true
 	for dialogue in jsonData["stages"][stage]["incorrect_dialogue"]:
 		match dialogue["character"]:
