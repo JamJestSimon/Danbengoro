@@ -34,7 +34,6 @@ grow_vertical = 0
 size_flags_horizontal = 0
 mouse_filter = 2
 script = ExtResource("2_jch3p")
-truths = Array[String](["Truth 1", "Truth 2", "Truth 3"])
 crosshair = NodePath("../../Crosshair")
 
 [node name="Title" type="Label" parent="CanvasLayer"]
@@ -47,6 +46,7 @@ horizontal_alignment = 1
 vertical_alignment = 1
 
 [node name="SpeechBox" type="RichTextLabel" parent="CanvasLayer"]
+z_index = 5
 custom_minimum_size = Vector2(0, 300)
 anchors_preset = 12
 anchor_top = 1.0
@@ -61,6 +61,7 @@ scroll_active = false
 
 [node name="TextureRect" type="TextureRect" parent="CanvasLayer/SpeechBox"]
 modulate = Color(0, 0, 0, 0.392157)
+z_index = -1
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0

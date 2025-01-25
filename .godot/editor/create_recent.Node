@@ -1,7 +1,7 @@
+Label
 TextureRect
 RichTextLabel
 Sprite2D
-Label
 PathFollow2D
 Path2D
 CenterContainer

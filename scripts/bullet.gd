@@ -1,4 +1,4 @@
-extends Label
+extends TextureRect
 
 @export var selected_scale: Vector2 = Vector2(1,1)
 @export var time: float = 0.1

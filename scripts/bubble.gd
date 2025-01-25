@@ -32,6 +32,7 @@ func _process(delta: float) -> void:
 
 func set_player():
 	player_bubble = true
+	sprite.modulate = Color(0, 1, 0, 1)
 
 func pop_correct():
 	#anim goes here
@@ -54,6 +55,8 @@ func set_truth(value: String):
 
 func set_shootable(value: bool):
 	sprite.set_meta("shootable", value)
+	if value:
+		sprite.modulate = Color(1, 0, 0, 1)
 
 func set_time(value: float):
 	exists = true
@@ -65,9 +68,9 @@ func set_truth_acquisition(value: String):
 
 func set_route(value: Dictionary):
 	type = value["type"]
-	sprite.call_deferred("set_speed", value["speed"] * value["direction"])
+	sprite.call_deferred("set_speed", (value["speed"] as float) * (value["direction"] as float))
 	if type == "rectangle":
-		size = Vector2(value["width"], value["height"])
+		size = Vector2(value["width"] as float, value["height"] as float)
 		curve.add_point(Vector2(0, 0))
 		curve.add_point(Vector2(size.x, 0))
 		curve.add_point(Vector2(size.x, size.y))

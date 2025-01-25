@@ -48,15 +48,15 @@ func restart_stage() -> void:
 func spawn_bubble() -> void:
 	speaker.visible = true
 	var bubbles = jsonData["stages"][stage]["bubbles"] as Array
-	var startPos = Vector2(bubbles[bubble]["start_position"]["x"], bubbles[bubble]["start_position"]["y"])
+	var startPos = Vector2(bubbles[bubble]["start_position"]["x"] as float, bubbles[bubble]["start_position"]["y"] as float)
 	var bubble_inst = bubble_node.instantiate()
 	add_child(bubble_inst)
 	bubble_inst.call_deferred("set_start_pos", startPos)
 	bubble_inst.call_deferred("set_text", bubbles[bubble]["text"])
 	bubble_inst.call_deferred("set_truth", bubbles[bubble]["truth"])
 	bubble_inst.call_deferred("set_route", bubbles[bubble]["route"])
-	bubble_inst.call_deferred("set_time", bubbles[bubble]["time"])
-	bubble_inst.call_deferred("set_shootable", bubbles[bubble]["shootable"])
+	bubble_inst.call_deferred("set_time", bubbles[bubble]["time"] as float)
+	bubble_inst.call_deferred("set_shootable", bubbles[bubble]["shootable"] as bool)
 	bubble_inst.call_deferred("set_truth_acquisition", bubbles[bubble]["truth_acquisition"])
 	match bubbles[bubble]["character"]:
 		"B":
@@ -74,7 +74,7 @@ func spawn_player_bubble() -> void:
 	add_child(bubble_inst)
 	bubble_inst.call_deferred("set_start_pos", Vector2(get_viewport_rect().size.x / 2, get_viewport_rect().size.y / 2))
 	bubble_inst.call_deferred("set_text", bubbles[player_bubble]["text"])
-	bubble_inst.call_deferred("set_time", bubbles[player_bubble]["time"])
+	bubble_inst.call_deferred("set_time", bubbles[player_bubble]["time"] as float)
 	bubble_inst.call_deferred("set_player")
 
 func next_bubble() -> void:
@@ -93,7 +93,7 @@ func next_bubble() -> void:
 				"R":
 					speaker.texture = riumin
 			speechbox.text = "[center]%s[/center]" % dialogue["text"]
-			await get_tree().create_timer(dialogue["time"]).timeout
+			await get_tree().create_timer(dialogue["time"] as float).timeout
 		speechbox.visible = false
 		restart_stage()
 	else:
@@ -128,7 +128,7 @@ func on_incorrect_bubble_destoryed() -> void:
 			"R":
 				speaker.texture = riumin
 		speechbox.text = "[center]%s[/center]" % dialogue["text"]
-		await get_tree().create_timer(dialogue["time"]).timeout
+		await get_tree().create_timer(dialogue["time"] as float).timeout
 	speechbox.visible = false
 	restart_stage()
 

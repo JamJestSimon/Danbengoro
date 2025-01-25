@@ -1,13 +1,19 @@
-[gd_scene load_steps=6 format=3 uid="uid://c5t8qb11rlbaa"]
+[gd_scene load_steps=7 format=3 uid="uid://c5t8qb11rlbaa"]
 
 [ext_resource type="Script" path="res://scripts/bubble.gd" id="1_1vj7v"]
-[ext_resource type="Shape2D" uid="uid://gil2menjqita" path="res://shapes/new_rectangle_shape_2d.tres" id="1_spdwa"]
+[ext_resource type="Texture2D" uid="uid://diucv1vsghm7s" path="res://sprites/Bubble.png" id="2_hw7ot"]
 [ext_resource type="Script" path="res://scripts/bubble_move.gd" id="2_oeffu"]
 
 [sub_resource type="Curve2D" id="Curve2D_sq61q"]
 
-[sub_resource type="PlaceholderTexture2D" id="PlaceholderTexture2D_6xlif"]
-size = Vector2(200, 50)
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_g2cq2"]
+radius = 240.0
+height = 556.0
+
+[sub_resource type="LabelSettings" id="LabelSettings_je4ry"]
+font_size = 50
+outline_size = 10
+outline_color = Color(0, 0, 0, 1)
 
 [node name="Path2D" type="Path2D" node_paths=PackedStringArray("label", "sprite")]
 curve = SubResource("Curve2D_sq61q")
@@ -19,7 +25,9 @@ sprite = NodePath("PathFollow2D/Bubble")
 rotates = false
 
 [node name="Bubble" type="Sprite2D" parent="PathFollow2D" node_paths=PackedStringArray("root")]
-texture = SubResource("PlaceholderTexture2D_6xlif")
+z_index = -1
+scale = Vector2(0.4, 0.4)
+texture = ExtResource("2_hw7ot")
 script = ExtResource("2_oeffu")
 root = NodePath("../..")
 metadata/truth = ""
@@ -29,22 +37,24 @@ metadata/truth_acquisition = ""
 [node name="Area2D" type="Area2D" parent="PathFollow2D/Bubble"]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="PathFollow2D/Bubble/Area2D"]
-shape = ExtResource("1_spdwa")
+rotation = 1.5708
+shape = SubResource("CapsuleShape2D_g2cq2")
 
 [node name="CenterContainer" type="CenterContainer" parent="PathFollow2D/Bubble"]
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
-offset_left = -100.0
-offset_top = -25.0
-offset_right = -100.0
-offset_bottom = -25.0
+offset_left = -276.0
+offset_top = -240.5
+offset_right = -276.0
+offset_bottom = -240.5
 grow_horizontal = 2
 grow_vertical = 2
 
 [node name="Label" type="Label" parent="PathFollow2D/Bubble/CenterContainer"]
-custom_minimum_size = Vector2(200, 0)
+custom_minimum_size = Vector2(420, 300)
 layout_mode = 2
+label_settings = SubResource("LabelSettings_je4ry")
 horizontal_alignment = 1
 vertical_alignment = 1
 autowrap_mode = 2

@@ -20,6 +20,7 @@ func set_truth(value: String):
 func _input(event: InputEvent) -> void:
 	if event is InputEventMouseButton:
 		if (event as InputEventMouseButton).button_index == 1 and (event as InputEventMouseButton).pressed:
+			
 			var areas = child_area.get_overlapping_areas()
 			for area in areas:
 				var parent = area.get_parent() as Sprite2D
