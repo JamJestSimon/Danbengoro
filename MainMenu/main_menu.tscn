@@ -1,7 +1,7 @@
 [gd_scene load_steps=6 format=3 uid="uid://w8or6ox7es0v"]
 
 [ext_resource type="Script" path="res://MainMenu/main_menu.gd" id="1_yb0qn"]
-[ext_resource type="PackedScene" uid="uid://doolfp234vakd" path="res://scenes/shooting_stage.tscn" id="2_eg4eb"]
+[ext_resource type="PackedScene" uid="uid://d3x7d3b72jhgs" path="res://scenes/intro.tscn" id="2_6k8tq"]
 [ext_resource type="Texture2D" uid="uid://bvl1g0c4otwvc" path="res://MainMenu/MainMenuImage.png" id="3_th874"]
 [ext_resource type="Texture2D" uid="uid://b174jol8de47t" path="res://sprites/LOGO.png" id="4_jty0q"]
 [ext_resource type="AudioStream" uid="uid://b4nmkbk862eho" path="res://music/Five Armies.mp3" id="5_6tbym"]
@@ -14,7 +14,7 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_yb0qn")
-gameScene = ExtResource("2_eg4eb")
+gameScene = ExtResource("2_6k8tq")
 credits = NodePath("CanvasLayer")
 
 [node name="TextureRect" type="TextureRect" parent="."]

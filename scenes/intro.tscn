@@ -1,4 +1,4 @@
-[gd_scene load_steps=8 format=3 uid="uid://d3x7d3b72jhgs"]
+[gd_scene load_steps=9 format=3 uid="uid://d3x7d3b72jhgs"]
 
 [ext_resource type="Script" path="res://scripts/intro_controller.gd" id="1_mtftl"]
 [ext_resource type="Texture2D" uid="uid://boj8wou8p2j0b" path="res://sprites/OneWhitePixel.png" id="1_oyvif"]
@@ -6,6 +6,7 @@
 [ext_resource type="Texture2D" uid="uid://84e27kg7wu2p" path="res://sprites/izmailov_dark.png" id="3_3ky1x"]
 [ext_resource type="Texture2D" uid="uid://chnh2al3mi5bm" path="res://sprites/stepanov_dark.png" id="4_dflcs"]
 [ext_resource type="Texture2D" uid="uid://ltt5w6g4pfgq" path="res://sprites/ryumin_dark.png" id="5_vtenf"]
+[ext_resource type="AudioStream" uid="uid://dueqbwri0fn07" path="res://music/A Singular Perversion.mp3" id="7_rwh2k"]
 
 [sub_resource type="ImageTexture" id="ImageTexture_2oewj"]
 
@@ -30,6 +31,7 @@ anchor_bottom = 1.0
 offset_top = -23.0
 grow_horizontal = 2
 grow_vertical = 0
+theme_override_font_sizes/normal_font_size = 75
 bbcode_enabled = true
 fit_content = true
 scroll_active = false
@@ -46,20 +48,25 @@ grow_vertical = 2
 texture = ExtResource("1_oyvif")
 
 [node name="SpeakerLayer" type="CanvasLayer" parent="."]
-layer = -128
+layer = -64
 
 [node name="Speaker" type="TextureRect" parent="SpeakerLayer"]
 z_index = -20
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
 grow_horizontal = 2
 grow_vertical = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
 texture = SubResource("ImageTexture_2oewj")
 
-[node name="ColorRect" type="ColorRect" parent="SpeakerLayer"]
+[node name="BGLayer" type="CanvasLayer" parent="."]
+layer = -128
+
+[node name="ColorRect" type="ColorRect" parent="BGLayer"]
 z_index = -20
 anchors_preset = 15
 anchor_right = 1.0
@@ -67,3 +74,8 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 color = Color(0, 0, 0, 1)
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("7_rwh2k")
+autoplay = true
+parameters/looping = true
