@@ -19,6 +19,7 @@ func next_line() -> void:
 	if line == lines_total:
 		get_tree().change_scene_to_file("res://scenes/shooting_stage.tscn")
 	var selected_image = jsonData["lines"][line]["image"]
+	speaker.visible = true
 	match selected_image:
 		"B":
 			speaker.texture = beniowski
@@ -30,6 +31,8 @@ func next_line() -> void:
 			speaker.texture = riumin
 		"":
 			speaker.visible = false
+	var text = jsonData["lines"][line]["text"]
+	speechbox.text = "[center]%s[/center]" % text
 	line += 1
 
 func _input(event: InputEvent) -> void:

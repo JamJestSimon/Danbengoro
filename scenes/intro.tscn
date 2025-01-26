@@ -1,12 +1,22 @@
-[gd_scene load_steps=4 format=3 uid="uid://d3x7d3b72jhgs"]
+[gd_scene load_steps=8 format=3 uid="uid://d3x7d3b72jhgs"]
 
 [ext_resource type="Script" path="res://scripts/intro_controller.gd" id="1_mtftl"]
 [ext_resource type="Texture2D" uid="uid://boj8wou8p2j0b" path="res://sprites/OneWhitePixel.png" id="1_oyvif"]
+[ext_resource type="Texture2D" uid="uid://bab8gle41u536" path="res://sprites/beniowski_dark.png" id="2_fjm4u"]
+[ext_resource type="Texture2D" uid="uid://cwt1yn3178cke" path="res://sprites/izmailov_dark.png" id="3_3ky1x"]
+[ext_resource type="Texture2D" uid="uid://0qry35w6jo2q" path="res://sprites/stepanov_dark.png" id="4_dflcs"]
+[ext_resource type="Texture2D" uid="uid://dnnf6ju02xj8v" path="res://sprites/ryumin_dark.png" id="5_vtenf"]
 
 [sub_resource type="ImageTexture" id="ImageTexture_2oewj"]
 
-[node name="Intro" type="Node2D"]
+[node name="Intro" type="Node2D" node_paths=PackedStringArray("speechbox", "speaker")]
 script = ExtResource("1_mtftl")
+speechbox = NodePath("CanvasLayer/SpeechBox")
+speaker = NodePath("SpeakerLayer/Speaker")
+beniowski = ExtResource("2_fjm4u")
+izmailow = ExtResource("3_3ky1x")
+stieplanow = ExtResource("4_dflcs")
+riumin = ExtResource("5_vtenf")
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 
@@ -21,7 +31,6 @@ offset_top = -23.0
 grow_horizontal = 2
 grow_vertical = 0
 bbcode_enabled = true
-text = "[center]This is my centered text.[/center]"
 fit_content = true
 scroll_active = false
 
@@ -52,6 +61,9 @@ texture = SubResource("ImageTexture_2oewj")
 
 [node name="ColorRect" type="ColorRect" parent="SpeakerLayer"]
 z_index = -20
-offset_right = 40.0
-offset_bottom = 40.0
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
 color = Color(0, 0, 0, 1)
