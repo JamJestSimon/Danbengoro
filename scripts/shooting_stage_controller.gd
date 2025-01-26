@@ -164,3 +164,4 @@ func _input(event):
 		isTimeScaleChanged = false
 		get_tree().call_group(&"Bubble", &"changeSpeed", Engine.time_scale)
 		return
+	

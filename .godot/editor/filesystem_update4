@@ -4,3 +4,5 @@ res://scenes/shooting_stage.tscn
 res://nodes/bubble.tscn
 res://nodes/bullet.tscn
 res://nodes/crosshair.tscn
+res://scripts/shooting_stage_controller.gd
+res://scripts/pause_menu.gd
