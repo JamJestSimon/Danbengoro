@@ -1,8 +1,9 @@
-[gd_scene load_steps=4 format=3 uid="uid://w8or6ox7es0v"]
+[gd_scene load_steps=5 format=3 uid="uid://w8or6ox7es0v"]
 
 [ext_resource type="Script" path="res://MainMenu/main_menu.gd" id="1_yb0qn"]
 [ext_resource type="PackedScene" uid="uid://doolfp234vakd" path="res://scenes/shooting_stage.tscn" id="2_eg4eb"]
 [ext_resource type="Texture2D" uid="uid://bvl1g0c4otwvc" path="res://MainMenu/MainMenuImage.png" id="3_th874"]
+[ext_resource type="Texture2D" uid="uid://b174jol8de47t" path="res://sprites/LOGO.png" id="4_jty0q"]
 
 [node name="MainMenu" type="Control"]
 layout_mode = 3
@@ -24,22 +25,17 @@ grow_horizontal = 2
 grow_vertical = 2
 texture = ExtResource("3_th874")
 
-[node name="Label" type="Label" parent="."]
-layout_mode = 0
-offset_left = 912.0
-offset_top = 132.0
-offset_right = 1784.0
-offset_bottom = 329.0
-theme_override_constants/outline_size = 32
-theme_override_font_sizes/font_size = 144
-text = "Danbenboro"
-
 [node name="VBoxContainer" type="VBoxContainer" parent="."]
-layout_mode = 0
-offset_left = 1189.0
-offset_top = 659.0
-offset_right = 1649.0
-offset_bottom = 897.0
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.731
+anchor_top = 0.718
+anchor_right = 0.731
+anchor_bottom = 0.718
+offset_left = -229.52
+offset_top = -119.44
+offset_right = 230.48
+offset_bottom = 118.56
 theme_override_constants/separation = 24
 
 [node name="Start" type="Button" parent="VBoxContainer"]
@@ -51,6 +47,20 @@ text = "Start"
 layout_mode = 2
 theme_override_font_sizes/font_size = 72
 text = "Quit"
+
+[node name="Logo" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.72
+anchor_top = 0.211
+anchor_right = 0.72
+anchor_bottom = 0.211
+offset_left = -443.4
+offset_top = -124.88
+offset_right = 506.6
+offset_bottom = 125.12
+grow_horizontal = 0
+texture = ExtResource("4_jty0q")
 
 [connection signal="button_down" from="VBoxContainer/Start" to="." method="_on_start_button_down"]
 [connection signal="button_down" from="VBoxContainer/Quit" to="." method="_on_quit_button_down"]
