@@ -79,3 +79,7 @@ texture = ExtResource("4_rmxih")
 lifetime = 3.0
 one_shot = true
 explosiveness = 1.0
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="PathFollow2D/Bubble"]
+
+[connection signal="finished" from="PathFollow2D/Bubble/AudioStreamPlayer" to="." method="_on_audio_stream_player_finished"]

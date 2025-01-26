@@ -20,7 +20,7 @@ func _ready() -> void:
 func _process(delta: float) -> void:
 	if exists:
 		time_to_live -= delta
-		if time_to_live <= 0 and not dying:
+		if time_to_live <= 0 and not dying and player_bubble:
 			dying = true
 			var tween = get_tree().create_tween()
 			tween.tween_property(self, "modulate", Color(1, 1, 1, 0), 0.2).set_trans(Tween.TRANS_SINE)
@@ -96,3 +96,16 @@ func set_route(value: Dictionary):
 		curve.add_point(Vector2(radius, radius), Vector2(0, 0), Vector2(-radius/2, radius/2))
 		curve.add_point(Vector2(0, radius), Vector2(0, 0), Vector2(-radius/2, -radius/2))
 		curve.add_point(Vector2(0, 0))
+
+
+func _on_audio_stream_player_finished() -> void:
+	if not dying:
+		dying = true
+		var tween = get_tree().create_tween()
+		tween.tween_property(self, "modulate", Color(1, 1, 1, 0), 0.2).set_trans(Tween.TRANS_SINE)
+		await tween.finished
+		if not player_bubble:
+			get_parent().call_deferred("next_bubble")
+		else:
+			get_parent().call_deferred("next_player_bubble")
+		self.call_deferred("free")
