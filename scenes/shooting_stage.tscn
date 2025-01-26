@@ -1,4 +1,4 @@
-[gd_scene load_steps=16 format=3 uid="uid://doolfp234vakd"]
+[gd_scene load_steps=17 format=3 uid="uid://doolfp234vakd"]
 
 [ext_resource type="Script" path="res://scripts/shooting_stage_controller.gd" id="1_6nfw1"]
 [ext_resource type="Script" path="res://scripts/bullet_chamber.gd" id="2_jch3p"]
@@ -15,6 +15,7 @@
 [ext_resource type="Texture2D" uid="uid://cgj7q174dgfna" path="res://sprites/Riumin_Yapper.png" id="9_macfh"]
 [ext_resource type="Script" path="res://scripts/pause_menu.gd" id="10_kxbn5"]
 [ext_resource type="AudioStream" uid="uid://c47kav8fje6gm" path="res://music/Anamalie.mp3" id="11_yc2wb"]
+[ext_resource type="AudioStream" uid="uid://bmcwn13f3me82" path="res://SFX/gunshot.mp3" id="16_57wbk"]
 
 [node name="Node2D" type="Node2D" node_paths=PackedStringArray("bullet_chamber", "title", "speaker", "speechbox", "crosshair")]
 script = ExtResource("1_6nfw1")
@@ -148,6 +149,11 @@ text = "Exit to Menu"
 stream = ExtResource("11_yc2wb")
 autoplay = true
 bus = &"Music"
+
+[node name="gunshot" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("16_57wbk")
+volume_db = -8.0
+bus = &"SFX"
 
 [connection signal="button_down" from="PauseMenu/VBoxContainer/Resume" to="PauseMenu" method="_on_resume_button_down"]
 [connection signal="button_down" from="PauseMenu/VBoxContainer/ToMenu" to="PauseMenu" method="_on_to_menu_button_down"]

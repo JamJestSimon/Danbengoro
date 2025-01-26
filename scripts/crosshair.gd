@@ -22,6 +22,7 @@ func set_truth(value: String):
 	selected_truth = value
 
 func add_tween():
+	if visible: $"../gunshot".play()
 	var tween = get_tree().create_tween()
 	tween.tween_property(self, "scale", anim_scale, 0.1).set_trans(anim_trans)
 	await tween.finished

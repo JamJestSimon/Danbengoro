@@ -10,9 +10,11 @@ func _ready() -> void:
 	pass # Replace with function body.
 
 func pop_correct() -> void:
+	$"../../bubblePop".play()
 	root.call_deferred("pop_correct")
 
 func pop_incorrect() -> void:
+	$"../../bubblePop".play()
 	root.call_deferred("pop_incorrect")
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
