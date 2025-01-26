@@ -120,4 +120,6 @@ func _on_audio_stream_player_finished() -> void:
 		self.call_deferred("free")
 
 func changeSpeed(speedVal : float = 1.):
+	if not is_instance_valid(audio_player): return
+	
 	audio_player.pitch_scale = speedVal

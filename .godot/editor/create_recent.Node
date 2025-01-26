@@ -1,5 +1,6 @@
+AudioStreamPlayer
+TextureRect
 VBoxContainer
 Label
 ColorRect
 CanvasLayer
-AudioStreamPlayer

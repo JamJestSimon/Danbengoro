@@ -33,7 +33,8 @@ version_control/autoload_on_startup=true
 [file_customization]
 
 folder_colors={
-"res://MainMenu/": "green"
+"res://MainMenu/": "green",
+"res://music/": "blue"
 }
 
 [input]

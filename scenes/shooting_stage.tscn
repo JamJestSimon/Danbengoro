@@ -1,4 +1,4 @@
-[gd_scene load_steps=11 format=3 uid="uid://doolfp234vakd"]
+[gd_scene load_steps=12 format=3 uid="uid://doolfp234vakd"]
 
 [ext_resource type="Script" path="res://scripts/shooting_stage_controller.gd" id="1_6nfw1"]
 [ext_resource type="Script" path="res://scripts/bullet_chamber.gd" id="2_jch3p"]
@@ -10,6 +10,7 @@
 [ext_resource type="Texture2D" uid="uid://boj8wou8p2j0b" path="res://sprites/OneWhitePixel.png" id="7_roh31"]
 [ext_resource type="Texture2D" uid="uid://b4ml7rkh3gf0m" path="res://sprites/Crosshair.png" id="8_i46nt"]
 [ext_resource type="Script" path="res://scripts/pause_menu.gd" id="10_kxbn5"]
+[ext_resource type="AudioStream" uid="uid://c47kav8fje6gm" path="res://music/Anamalie.mp3" id="11_yc2wb"]
 
 [node name="Node2D" type="Node2D" node_paths=PackedStringArray("bullet_chamber", "title", "speaker", "speechbox", "crosshair")]
 script = ExtResource("1_6nfw1")
@@ -41,6 +42,8 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+theme_override_constants/outline_size = 24
+theme_override_font_sizes/font_size = 72
 horizontal_alignment = 1
 vertical_alignment = 1
 
@@ -53,6 +56,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 0
+theme_override_font_sizes/normal_font_size = 72
 bbcode_enabled = true
 text = "[center]This is my centered text.[/center]"
 fit_content = true
@@ -91,6 +95,7 @@ texture = ExtResource("3_stx5x")
 [node name="PauseMenu" type="CanvasLayer" parent="."]
 process_mode = 3
 layer = 100
+visible = false
 script = ExtResource("10_kxbn5")
 
 [node name="ColorRect" type="ColorRect" parent="PauseMenu"]
@@ -129,6 +134,12 @@ text = "Resume"
 layout_mode = 2
 theme_override_font_sizes/font_size = 72
 text = "Exit to Menu"
+
+[node name="Music" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("11_yc2wb")
+autoplay = true
+stream_paused = true
+bus = &"Music"
 
 [connection signal="button_down" from="PauseMenu/VBoxContainer/Resume" to="PauseMenu" method="_on_resume_button_down"]
 [connection signal="button_down" from="PauseMenu/VBoxContainer/ToMenu" to="PauseMenu" method="_on_to_menu_button_down"]

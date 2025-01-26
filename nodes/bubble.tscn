@@ -67,6 +67,7 @@ grow_vertical = 2
 [node name="Label" type="Label" parent="PathFollow2D/Bubble/CenterContainer"]
 custom_minimum_size = Vector2(420, 300)
 layout_mode = 2
+text = "aa"
 label_settings = SubResource("LabelSettings_je4ry")
 horizontal_alignment = 1
 vertical_alignment = 1
@@ -82,5 +83,6 @@ one_shot = true
 explosiveness = 1.0
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="PathFollow2D/Bubble"]
+bus = &"Voice"
 
 [connection signal="finished" from="PathFollow2D/Bubble/AudioStreamPlayer" to="." method="_on_audio_stream_player_finished"]

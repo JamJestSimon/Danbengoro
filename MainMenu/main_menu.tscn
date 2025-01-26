@@ -1,9 +1,10 @@
-[gd_scene load_steps=5 format=3 uid="uid://w8or6ox7es0v"]
+[gd_scene load_steps=6 format=3 uid="uid://w8or6ox7es0v"]
 
 [ext_resource type="Script" path="res://MainMenu/main_menu.gd" id="1_yb0qn"]
 [ext_resource type="PackedScene" uid="uid://doolfp234vakd" path="res://scenes/shooting_stage.tscn" id="2_eg4eb"]
 [ext_resource type="Texture2D" uid="uid://bvl1g0c4otwvc" path="res://MainMenu/MainMenuImage.png" id="3_th874"]
 [ext_resource type="Texture2D" uid="uid://b174jol8de47t" path="res://sprites/LOGO.png" id="4_jty0q"]
+[ext_resource type="AudioStream" uid="uid://b4nmkbk862eho" path="res://music/Five Armies.mp3" id="5_6tbym"]
 
 [node name="MainMenu" type="Control"]
 layout_mode = 3
@@ -61,6 +62,12 @@ offset_right = 506.6
 offset_bottom = 125.12
 grow_horizontal = 0
 texture = ExtResource("4_jty0q")
+
+[node name="Music" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("5_6tbym")
+volume_db = -4.0
+autoplay = true
+bus = &"Music"
 
 [connection signal="button_down" from="VBoxContainer/Start" to="." method="_on_start_button_down"]
 [connection signal="button_down" from="VBoxContainer/Quit" to="." method="_on_quit_button_down"]

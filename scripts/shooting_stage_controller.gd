@@ -144,7 +144,7 @@ func on_correct_bubble_destoryed() -> void:
 var isTimeScaleChanged : bool = false
 func _input(event):
 	if event.is_action_pressed("SpeedUp") and !isTimeScaleChanged:
-		Engine.time_scale = 5.
+		Engine.time_scale = 8.
 		get_tree().call_group(&"Bubble", &"changeSpeed", Engine.time_scale)
 		isTimeScaleChanged = true
 		return
@@ -155,7 +155,7 @@ func _input(event):
 		return
 	
 	if event.is_action_pressed("SlowDown") and !isTimeScaleChanged:
-		Engine.time_scale = 0.2
+		Engine.time_scale = 0.5
 		isTimeScaleChanged = true
 		get_tree().call_group(&"Bubble", &"changeSpeed", Engine.time_scale)
 		return
