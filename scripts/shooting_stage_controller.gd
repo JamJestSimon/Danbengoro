@@ -9,6 +9,10 @@ var bubble_node = preload("res://nodes/bubble.tscn")
 @export var beniowski: Texture
 @export var stieplanow: Texture
 @export var riumin: Texture
+@export var izmailow_yapper: Texture
+@export var beniowski_yapper: Texture
+@export var stieplanow_yapper: Texture
+@export var riumin_yapper: Texture
 @export var crosshair: Sprite2D
 var stage = 0
 var bubble = 0
@@ -24,6 +28,7 @@ func _ready() -> void:
 	stages_amount = (jsonData["stages"] as Array).size()
 	title.modulate = Color(1, 1, 1, 0)
 	self.call_deferred("start_stage")
+	spectrum = AudioServer.get_bus_effect_instance(2, 0)
 	pass
 
 func start_stage() -> void:
@@ -62,6 +67,7 @@ func spawn_bubble() -> void:
 	bubble_inst.call_deferred("set_shootable", bubbles[bubble]["shootable"] as bool)
 	bubble_inst.call_deferred("set_truth_acquisition", bubbles[bubble]["truth_acquisition"])
 	bubble_inst.call_deferred("set_audio", bubbles[bubble]["id"])
+	currentSpeaker = bubbles[bubble]["character"]
 	match bubbles[bubble]["character"]:
 		"B":
 			speaker.texture = beniowski
@@ -87,6 +93,7 @@ func next_bubble() -> void:
 		#anims here
 		speechbox.visible = true
 		for dialogue in jsonData["stages"][stage]["restart_dialogue"]:
+			currentSpeaker = dialogue["character"]
 			match dialogue["character"]:
 				"B":
 					speaker.texture = beniowski
@@ -123,6 +130,7 @@ func on_incorrect_bubble_destoryed() -> void:
 	crosshair.visible = false
 	speechbox.visible = true
 	for dialogue in jsonData["stages"][stage]["incorrect_dialogue"]:
+		
 		match dialogue["character"]:
 			"B":
 				speaker.texture = beniowski
@@ -164,4 +172,41 @@ func _input(event):
 		isTimeScaleChanged = false
 		get_tree().call_group(&"Bubble", &"changeSpeed", Engine.time_scale)
 		return
+
+@export var yapperThreshold: float = 5.
+var spectrum
+var volume
+var currentSpeaker: String
+var isSpeaking: bool = false
+func _process(_delta):
+	if(not spectrum): return
+	volume = spectrum.get_magnitude_for_frequency_range(300, 3400).length()
 	
+	print(volume)
+	var shouldBeSpeaking = volume*1000 > yapperThreshold
+	
+	if isSpeaking == shouldBeSpeaking: return
+	
+	if isSpeaking:
+		isSpeaking = false
+		match currentSpeaker:
+			"B":
+				speaker.texture = beniowski
+			"I":
+				speaker.texture = izmailow
+			"S":
+				speaker.texture = stieplanow
+			"R":
+				speaker.texture = riumin
+		return
+	
+	isSpeaking = true
+	match currentSpeaker:
+		"B":
+			speaker.texture = beniowski_yapper
+		"I":
+			speaker.texture = izmailow_yapper
+		"S":
+			speaker.texture = stieplanow_yapper
+		"R":
+			speaker.texture = riumin_yapper

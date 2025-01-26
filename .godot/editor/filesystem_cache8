@@ -4,11 +4,11 @@ icon.svg::CompressedTexture2D::2595834816942553984::1737821218::1737885717::1:::
 default_bus_layout.tres::AudioBusLayout::7668219711057447601::1737892355::0::1::::<><>::
 ::res://data/::1737885671
 shooting_stage_data.json::JSON::-1::1737885671::0::1::::<><>::
-::res://MainMenu/::1737892865
+::res://MainMenu/::1737892885
 MainMenuImage.png::CompressedTexture2D::3884685229472267452::1737844369::1737885718::1::::<><>::
 main_menu.gd::GDScript::-1::1737844154::0::1::::<>Control<>::
-main_menu.tscn::PackedScene::1613161073254871471::1737892865::0::1::::<><>::res://MainMenu/main_menu.gd<>uid://doolfp234vakd::::res://scenes/shooting_stage.tscn<>uid://bvl1g0c4otwvc::::res://MainMenu/MainMenuImage.png<>uid://b174jol8de47t::::res://sprites/LOGO.png<>uid://b4nmkbk862eho::::res://music/Five Armies.mp3
-::res://music/::1737892871
+main_menu.tscn::PackedScene::1613161073254871471::1737892885::0::1::::<><>::res://MainMenu/main_menu.gd<>uid://doolfp234vakd::::res://scenes/shooting_stage.tscn<>uid://bvl1g0c4otwvc::::res://MainMenu/MainMenuImage.png<>uid://b174jol8de47t::::res://sprites/LOGO.png<>uid://b4nmkbk862eho::::res://music/Five Armies.mp3
+::res://music/::1737892872
 Anamalie.mp3::AudioStreamMP3::6874986245155014884::1737892070::1737892329::1::::<><>::
 Five Armies.mp3::AudioStreamMP3::4449480591364319604::1737892871::1737892872::1::::<><>::
 ::res://nodes/::1737892406
@@ -163,14 +163,18 @@ new_rectangle_shape_2d.tres::RectangleShape2D::438364824279281494::1737837126::0
 155.WAV::AudioStreamWAV::9004748378870742652::1737885673::1737885720::1::::<><>::
 156.WAV::AudioStreamWAV::384642795503896074::1737885673::1737885720::1::::<><>::
 157.WAV::AudioStreamWAV::5239766104851956916::1737885673::1737885720::1::::<><>::
-::res://sprites/::1737891035
+::res://sprites/::1737893396
 Beniowski.png::CompressedTexture2D::8665176100347845614::1737839363::1737885718::1::::<><>::
+Beniowski_Yapper.png::CompressedTexture2D::4170461880433451774::1737893396::1737893398::1::::<><>::
 Bubble.png::CompressedTexture2D::7762220689796435738::1737825018::1737885717::1::::<><>::
 Bullet.png::CompressedTexture2D::2643084983937669712::1737827556::1737885717::1::::<><>::
 Crosshair.png::CompressedTexture2D::4447395623270849730::1737822666::1737885717::1::::<><>::
 Izmajłow.png::CompressedTexture2D::3194675159302133610::1737839363::1737885718::1::::<><>::
+Izmajłow_Yapper.png::CompressedTexture2D::8585741361334693784::1737893396::1737893398::1::::<><>::
 LOGO.png::CompressedTexture2D::4279168325170547831::1737891034::1737891035::1::::<><>::
 OneWhitePixel.png::CompressedTexture2D::3389687610382770271::1737824074::1737885717::1::::<><>::
 Riumin.png::CompressedTexture2D::6339693849708366907::1737839363::1737885718::1::::<><>::
+Riumin_Yapper.png::CompressedTexture2D::5214526761834662990::1737893396::1737893398::1::::<><>::
 SmallBubble.png::CompressedTexture2D::1480832150262638391::1737844508::1737885717::1::::<><>::
 Stiepanow.png::CompressedTexture2D::1867299556874452494::1737839363::1737885718::1::::<><>::
+Stiepanow_Yapper.png::CompressedTexture2D::7138873206596222571::1737893396::1737893398::1::::<><>::
