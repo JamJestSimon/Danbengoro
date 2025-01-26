@@ -61,6 +61,7 @@ func spawn_bubble() -> void:
 	bubble_inst.call_deferred("set_time", bubbles[bubble]["time"] as float)
 	bubble_inst.call_deferred("set_shootable", bubbles[bubble]["shootable"] as bool)
 	bubble_inst.call_deferred("set_truth_acquisition", bubbles[bubble]["truth_acquisition"])
+	bubble_inst.call_deferred("set_audio", bubbles[bubble]["id"])
 	match bubbles[bubble]["character"]:
 		"B":
 			speaker.texture = beniowski

@@ -3,6 +3,7 @@ extends Path2D
 @export var label: Label
 @export var sprite: Sprite2D
 @export var particle_emmiter: GPUParticles2D
+@export var audio_player: AudioStreamPlayer
 var direction: int
 var type: String
 var size: Vector2
@@ -77,6 +78,13 @@ func set_time(value: float):
 
 func set_truth_acquisition(value: String):
 	sprite.set_meta("truth_acquisition", value)
+	pass
+
+func set_audio(value: String):
+	audio_player.stream = load("res://sounds/%s.WAV" % value)
+	audio_player.volume_db = 1
+	audio_player.pitch_scale = 1
+	audio_player.playing = true
 	pass
 
 func set_route(value: Dictionary):
