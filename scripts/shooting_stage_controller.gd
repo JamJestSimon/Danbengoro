@@ -145,18 +145,22 @@ var isTimeScaleChanged : bool = false
 func _input(event):
 	if event.is_action_pressed("SpeedUp") and !isTimeScaleChanged:
 		Engine.time_scale = 5.
+		get_tree().call_group(&"Bubble", &"changeSpeed", Engine.time_scale)
 		isTimeScaleChanged = true
 		return
 	elif event.is_action_released("SpeedUp") and isTimeScaleChanged:
 		Engine.time_scale = 1.
 		isTimeScaleChanged = false
+		get_tree().call_group(&"Bubble", &"changeSpeed", Engine.time_scale)
 		return
 	
 	if event.is_action_pressed("SlowDown") and !isTimeScaleChanged:
 		Engine.time_scale = 0.2
 		isTimeScaleChanged = true
+		get_tree().call_group(&"Bubble", &"changeSpeed", Engine.time_scale)
 		return
 	elif event.is_action_released("SlowDown") and isTimeScaleChanged:
 		Engine.time_scale = 1.
 		isTimeScaleChanged = false
+		get_tree().call_group(&"Bubble", &"changeSpeed", Engine.time_scale)
 		return

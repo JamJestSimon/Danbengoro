@@ -16,6 +16,7 @@ func _ready() -> void:
 	self.modulate = Color(1, 1, 1, 0)
 	var tween = get_tree().create_tween()
 	tween.tween_property(self, "modulate", Color(1, 1, 1, 1), 0.2).set_trans(Tween.TRANS_SINE)
+	add_to_group(&"Bubble")
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
@@ -83,7 +84,7 @@ func set_truth_acquisition(value: String):
 func set_audio(value: String):
 	audio_player.stream = load("res://sounds/%s.WAV" % value)
 	audio_player.volume_db = 1
-	audio_player.pitch_scale = 1
+	audio_player.pitch_scale = Engine.time_scale
 	audio_player.playing = true
 	pass
 
@@ -117,3 +118,6 @@ func _on_audio_stream_player_finished() -> void:
 		else:
 			get_parent().call_deferred("next_player_bubble")
 		self.call_deferred("free")
+
+func changeSpeed(speedVal : float = 1.):
+	audio_player.pitch_scale = speedVal

@@ -26,12 +26,13 @@ texture = ExtResource("3_th874")
 
 [node name="Label" type="Label" parent="."]
 layout_mode = 0
-offset_left = 1058.0
-offset_top = 119.0
-offset_right = 1811.0
-offset_bottom = 316.0
+offset_left = 912.0
+offset_top = 132.0
+offset_right = 1784.0
+offset_bottom = 329.0
+theme_override_constants/outline_size = 32
 theme_override_font_sizes/font_size = 144
-text = "dangerbonger"
+text = "Danbenboro"
 
 [node name="VBoxContainer" type="VBoxContainer" parent="."]
 layout_mode = 0
