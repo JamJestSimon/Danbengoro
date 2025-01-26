@@ -17,7 +17,7 @@ func _ready() -> void:
 
 func next_line() -> void:
 	if line == lines_total:
-		get_tree().change_scene_to_file("res://scenes/shooting_stage.tscn")
+		changeToNextScene()
 	else:
 		var selected_image = jsonData["lines"][line]["image"]
 		speaker.visible = true
@@ -36,8 +36,13 @@ func next_line() -> void:
 		speechbox.text = "[center]%s[/center]" % text
 		line += 1
 
+func changeToNextScene():
+	get_tree().change_scene_to_file("res://scenes/shooting_stage.tscn")
+
 func _input(event: InputEvent) -> void:
 	if event is InputEventMouseButton:
 		var mouse_event = event as InputEventMouseButton
 		if mouse_event.button_index == 1 and mouse_event.pressed:
 			next_line()
+	elif event.is_action_pressed("Pause"):
+		changeToNextScene()

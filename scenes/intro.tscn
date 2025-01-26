@@ -6,7 +6,7 @@
 [ext_resource type="Texture2D" uid="uid://84e27kg7wu2p" path="res://sprites/izmailov_dark.png" id="3_3ky1x"]
 [ext_resource type="Texture2D" uid="uid://chnh2al3mi5bm" path="res://sprites/stepanov_dark.png" id="4_dflcs"]
 [ext_resource type="Texture2D" uid="uid://ltt5w6g4pfgq" path="res://sprites/ryumin_dark.png" id="5_vtenf"]
-[ext_resource type="AudioStream" uid="uid://dueqbwri0fn07" path="res://music/A Singular Perversion.mp3" id="7_rwh2k"]
+[ext_resource type="AudioStream" uid="uid://bkucydpx4gad6" path="res://music/A Singular Perversion.mp3" id="7_rwh2k"]
 
 [sub_resource type="ImageTexture" id="ImageTexture_2oewj"]
 

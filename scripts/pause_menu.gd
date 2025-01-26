@@ -21,3 +21,10 @@ func _on_to_menu_button_down():
 	get_tree().paused = false
 	Input.set_mouse_mode(Input.MOUSE_MODE_VISIBLE)
 	get_tree().change_scene_to_file("res://MainMenu/main_menu.tscn")
+
+
+func _on_restart_stage_button_down():
+	get_tree().paused = false
+	visible = false
+	get_tree().call_group(&"Bubble","queue_free")       
+	owner.call("restart_stage")

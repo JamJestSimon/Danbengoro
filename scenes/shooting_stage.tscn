@@ -105,7 +105,6 @@ texture = ExtResource("3_stx5x")
 [node name="PauseMenu" type="CanvasLayer" parent="."]
 process_mode = 3
 layer = 100
-visible = false
 script = ExtResource("10_kxbn5")
 
 [node name="ColorRect" type="ColorRect" parent="PauseMenu"]
@@ -140,10 +139,30 @@ layout_mode = 2
 theme_override_font_sizes/font_size = 72
 text = "Resume"
 
+[node name="RestartStage" type="Button" parent="PauseMenu/VBoxContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 72
+text = "Restart Stage"
+
 [node name="ToMenu" type="Button" parent="PauseMenu/VBoxContainer"]
 layout_mode = 2
 theme_override_font_sizes/font_size = 72
 text = "Exit to Menu"
+
+[node name="RichTextLabel4" type="RichTextLabel" parent="PauseMenu"]
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = -134.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_font_sizes/normal_font_size = 48
+bbcode_enabled = true
+text = "[center]RIGHT-CLICK a red bubble to load it | LEFT-CLICK one to shoot it
+CTRL - slow down time | Space - speed it up[/center]"
+fit_content = true
+scroll_active = false
 
 [node name="Music" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("11_yc2wb")
@@ -157,4 +176,5 @@ volume_db = -8.0
 bus = &"SFX"
 
 [connection signal="button_down" from="PauseMenu/VBoxContainer/Resume" to="PauseMenu" method="_on_resume_button_down"]
+[connection signal="button_down" from="PauseMenu/VBoxContainer/RestartStage" to="PauseMenu" method="_on_restart_stage_button_down"]
 [connection signal="button_down" from="PauseMenu/VBoxContainer/ToMenu" to="PauseMenu" method="_on_to_menu_button_down"]

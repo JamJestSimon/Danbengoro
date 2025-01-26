@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://bkucydpx4gad6"
+path="res://.godot/imported/A Singular Perversion.mp3-cb8e4402dc833144fa50f6cb5e7f8c6c.mp3str"
+
+[deps]
+
+source_file="res://music/A Singular Perversion.mp3"
+dest_files=["res://.godot/imported/A Singular Perversion.mp3-cb8e4402dc833144fa50f6cb5e7f8c6c.mp3str"]
+
+[params]
+
+loop=true
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4
