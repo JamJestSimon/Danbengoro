@@ -2,7 +2,11 @@
 
 importer="texture"
 type="CompressedTexture2D"
+<<<<<<< HEAD
 uid="uid://dc8yccnk2h6i1"
+=======
+uid="uid://0qry35w6jo2q"
+>>>>>>> a2bad9f523dd69583dcb6fd109a7d8c7b8f0c016
 path="res://.godot/imported/stepanov_dark.png-6acf4aaa813517e04a8277c91928288f.ctex"
 metadata={
 "vram_texture": false

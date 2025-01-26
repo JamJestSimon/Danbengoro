@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 res://scenes/shooting_stage.tscn
 res://scripts/pause_menu.gd
 res://nodes/bubble.tscn
@@ -10,3 +11,7 @@ res://default_bus_layout.tres
 res://MainMenu/main_menu.gd
 res://scripts/crosshair.gd
 res://scripts/bubble_move.gd
+=======
+res://scenes/intro.tscn
+res://scripts/intro_controller.gd
+>>>>>>> a2bad9f523dd69583dcb6fd109a7d8c7b8f0c016

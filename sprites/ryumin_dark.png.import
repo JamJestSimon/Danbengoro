@@ -2,7 +2,11 @@
 
 importer="texture"
 type="CompressedTexture2D"
+<<<<<<< HEAD
 uid="uid://6yogasu8e0ma"
+=======
+uid="uid://dnnf6ju02xj8v"
+>>>>>>> a2bad9f523dd69583dcb6fd109a7d8c7b8f0c016
 path="res://.godot/imported/ryumin_dark.png-db50c37b49658153e47e3764f70b0f24.ctex"
 metadata={
 "vram_texture": false
