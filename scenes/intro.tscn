@@ -1,0 +1,57 @@
+[gd_scene load_steps=4 format=3 uid="uid://d3x7d3b72jhgs"]
+
+[ext_resource type="Script" path="res://scripts/intro_controller.gd" id="1_mtftl"]
+[ext_resource type="Texture2D" uid="uid://boj8wou8p2j0b" path="res://sprites/OneWhitePixel.png" id="1_oyvif"]
+
+[sub_resource type="ImageTexture" id="ImageTexture_2oewj"]
+
+[node name="Intro" type="Node2D"]
+script = ExtResource("1_mtftl")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="SpeechBox" type="RichTextLabel" parent="CanvasLayer"]
+z_index = 5
+custom_minimum_size = Vector2(0, 300)
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = -23.0
+grow_horizontal = 2
+grow_vertical = 0
+bbcode_enabled = true
+text = "[center]This is my centered text.[/center]"
+fit_content = true
+scroll_active = false
+
+[node name="TextureRect" type="TextureRect" parent="CanvasLayer/SpeechBox"]
+modulate = Color(0, 0, 0, 0.392157)
+z_index = -1
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("1_oyvif")
+
+[node name="SpeakerLayer" type="CanvasLayer" parent="."]
+layer = -128
+
+[node name="Speaker" type="TextureRect" parent="SpeakerLayer"]
+z_index = -20
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+texture = SubResource("ImageTexture_2oewj")
+
+[node name="ColorRect" type="ColorRect" parent="SpeakerLayer"]
+z_index = -20
+offset_right = 40.0
+offset_bottom = 40.0
+color = Color(0, 0, 0, 1)

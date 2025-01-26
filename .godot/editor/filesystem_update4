@@ -1,10 +1,2 @@
-res://scenes/shooting_stage.tscn
-res://scripts/pause_menu.gd
-res://nodes/bubble.tscn
-res://nodes/bullet.tscn
-res://nodes/crosshair.tscn
-res://MainMenu/main_menu.tscn
-res://scripts/bubble.gd
-res://scripts/shooting_stage_controller.gd
-res://default_bus_layout.tres
-res://MainMenu/main_menu.gd
+res://scenes/intro.tscn
+res://scripts/intro_controller.gd
