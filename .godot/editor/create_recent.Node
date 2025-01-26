@@ -1,8 +1,0 @@
-RichTextLabel
-Label
-VBoxContainer
-ScrollContainer
-CanvasLayer
-AudioStreamPlayer
-TextureRect
-ColorRect
