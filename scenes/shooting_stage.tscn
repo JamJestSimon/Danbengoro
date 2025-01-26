@@ -31,7 +31,7 @@ beniowski_yapper = ExtResource("7_04oak")
 stieplanow_yapper = ExtResource("8_8fj2m")
 riumin_yapper = ExtResource("9_macfh")
 crosshair = NodePath("Crosshair")
-yapperThreshold = 0.5
+yapperThreshold = 0.9
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 

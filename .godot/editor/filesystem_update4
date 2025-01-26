@@ -7,3 +7,4 @@ res://MainMenu/main_menu.tscn
 res://scripts/bubble.gd
 res://scripts/shooting_stage_controller.gd
 res://default_bus_layout.tres
+res://MainMenu/main_menu.gd

@@ -6,7 +6,7 @@
 [ext_resource type="Texture2D" uid="uid://b174jol8de47t" path="res://sprites/LOGO.png" id="4_jty0q"]
 [ext_resource type="AudioStream" uid="uid://b4nmkbk862eho" path="res://music/Five Armies.mp3" id="5_6tbym"]
 
-[node name="MainMenu" type="Control"]
+[node name="MainMenu" type="Control" node_paths=PackedStringArray("credits")]
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
@@ -15,6 +15,7 @@ grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_yb0qn")
 gameScene = ExtResource("2_eg4eb")
+credits = NodePath("CanvasLayer")
 
 [node name="TextureRect" type="TextureRect" parent="."]
 z_index = -10
@@ -29,20 +30,26 @@ texture = ExtResource("3_th874")
 [node name="VBoxContainer" type="VBoxContainer" parent="."]
 layout_mode = 1
 anchors_preset = -1
-anchor_left = 0.731
-anchor_top = 0.718
-anchor_right = 0.731
-anchor_bottom = 0.718
-offset_left = -229.52
-offset_top = -119.44
-offset_right = 230.48
-offset_bottom = 118.56
+anchor_left = 0.729
+anchor_top = 0.768
+anchor_right = 0.729
+anchor_bottom = 0.768
+offset_left = -229.68
+offset_top = -184.44
+offset_right = 230.32
+offset_bottom = 184.56
 theme_override_constants/separation = 24
 
 [node name="Start" type="Button" parent="VBoxContainer"]
 layout_mode = 2
 theme_override_font_sizes/font_size = 72
 text = "Start"
+
+[node name="CreditsButt" type="Button" parent="VBoxContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+theme_override_font_sizes/font_size = 72
+text = "Credits"
 
 [node name="Quit" type="Button" parent="VBoxContainer"]
 layout_mode = 2
@@ -63,6 +70,70 @@ offset_bottom = 125.12
 grow_horizontal = 0
 texture = ExtResource("4_jty0q")
 
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="ColorRect" type="ColorRect" parent="CanvasLayer"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.160784, 0.164706, 0.223529, 0.854902)
+
+[node name="ScrollContainer" type="ScrollContainer" parent="CanvasLayer"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 51.0
+offset_right = -47.0
+grow_horizontal = 2
+grow_vertical = 2
+horizontal_scroll_mode = 0
+
+[node name="VBoxContainer" type="VBoxContainer" parent="CanvasLayer/ScrollContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+alignment = 1
+
+[node name="Label" type="Label" parent="CanvasLayer/ScrollContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 100
+text = "Credits:"
+
+[node name="RichTextLabel" type="RichTextLabel" parent="CanvasLayer/ScrollContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_font_sizes/bold_italics_font_size = 72
+theme_override_font_sizes/italics_font_size = 72
+theme_override_font_sizes/mono_font_size = 72
+theme_override_font_sizes/normal_font_size = 48
+theme_override_font_sizes/bold_font_size = 72
+text = "Game:
+Roczo, Simon, Paczor
+---
+Voice Acting:
+Natalia Napiórkowska, Tomasz Murawski
+---
+Music:
+Kevin MacLeod (incompetech.com)
+Licensed under Creative Commons: By Attribution 4.0 License
+---
+Loosely based on books by Maurycy Beniowski, Edward Kajdański and Andrew Drummond"
+fit_content = true
+
+[node name="CreditsButt2" type="Button" parent="CanvasLayer"]
+self_modulate = Color(1, 0, 0, 1)
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -218.0
+offset_top = 95.0
+offset_right = -103.0
+offset_bottom = 202.0
+grow_horizontal = 0
+theme_override_font_sizes/font_size = 72
+text = "X"
+
 [node name="Music" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("5_6tbym")
 volume_db = -4.0
@@ -70,4 +141,6 @@ autoplay = true
 bus = &"Music"
 
 [connection signal="button_down" from="VBoxContainer/Start" to="." method="_on_start_button_down"]
+[connection signal="button_down" from="VBoxContainer/CreditsButt" to="." method="_on_credits_butt_button_down"]
 [connection signal="button_down" from="VBoxContainer/Quit" to="." method="_on_quit_button_down"]
+[connection signal="button_down" from="CanvasLayer/CreditsButt2" to="." method="_on_credits_butt_2_button_down"]
