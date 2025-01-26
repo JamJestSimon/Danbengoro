@@ -8,3 +8,5 @@ res://scripts/bubble.gd
 res://scripts/shooting_stage_controller.gd
 res://default_bus_layout.tres
 res://MainMenu/main_menu.gd
+res://scripts/crosshair.gd
+res://scripts/bubble_move.gd

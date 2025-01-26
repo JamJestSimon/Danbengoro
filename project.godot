@@ -34,6 +34,7 @@ version_control/autoload_on_startup=true
 
 folder_colors={
 "res://MainMenu/": "green",
+"res://SFX/": "yellow",
 "res://music/": "blue"
 }
 

@@ -16,7 +16,7 @@
 [ext_resource type="Script" path="res://scripts/pause_menu.gd" id="10_kxbn5"]
 [ext_resource type="AudioStream" uid="uid://c47kav8fje6gm" path="res://music/Anamalie.mp3" id="11_yc2wb"]
 
-[node name="Node2D" type="Node2D" node_paths=PackedStringArray("bullet_chamber", "title", "speaker", "speechbox", "crosshair")]
+[node name="Node2D" type="Node2D" node_paths=PackedStringArray("bullet_chamber", "title", "speaker", "speechbox", "crosshair", "sfx_gunshot")]
 script = ExtResource("1_6nfw1")
 bullet_chamber = NodePath("CanvasLayer/BulletChamber")
 title = NodePath("CanvasLayer/Title")
@@ -31,6 +31,7 @@ beniowski_yapper = ExtResource("7_04oak")
 stieplanow_yapper = ExtResource("8_8fj2m")
 riumin_yapper = ExtResource("9_macfh")
 crosshair = NodePath("Crosshair")
+sfx_gunshot = NodePath("")
 yapperThreshold = 0.9
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]

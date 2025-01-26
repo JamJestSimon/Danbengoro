@@ -1,9 +1,10 @@
-[gd_scene load_steps=9 format=3 uid="uid://c5t8qb11rlbaa"]
+[gd_scene load_steps=10 format=3 uid="uid://c5t8qb11rlbaa"]
 
 [ext_resource type="Script" path="res://scripts/bubble.gd" id="1_1vj7v"]
 [ext_resource type="Texture2D" uid="uid://diucv1vsghm7s" path="res://sprites/Bubble.png" id="2_hw7ot"]
 [ext_resource type="Script" path="res://scripts/bubble_move.gd" id="2_oeffu"]
 [ext_resource type="Texture2D" uid="uid://vdldbcpd3336" path="res://sprites/SmallBubble.png" id="4_rmxih"]
+[ext_resource type="AudioStream" uid="uid://capld31p56tao" path="res://SFX/bubblePop.mp3" id="5_63o7d"]
 
 [sub_resource type="Curve2D" id="Curve2D_sq61q"]
 
@@ -24,7 +25,9 @@ emission_sphere_radius = 10.0
 spread = 180.0
 initial_velocity_min = 100.0
 initial_velocity_max = 100.0
-gravity = Vector3(0, -10, 0)
+gravity = Vector3(0, -20, 0)
+linear_accel_min = -2.23517e-06
+linear_accel_max = 32.7
 
 [node name="Path2D" type="Path2D" node_paths=PackedStringArray("label", "sprite", "particle_emmiter", "audio_player")]
 curve = SubResource("Curve2D_sq61q")
@@ -84,5 +87,10 @@ explosiveness = 1.0
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="PathFollow2D/Bubble"]
 bus = &"Voice"
+
+[node name="bubblePop" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("5_63o7d")
+volume_db = 6.0
+bus = &"SFX"
 
 [connection signal="finished" from="PathFollow2D/Bubble/AudioStreamPlayer" to="." method="_on_audio_stream_player_finished"]

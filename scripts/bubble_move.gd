@@ -11,9 +11,11 @@ func _ready() -> void:
 
 func pop_correct() -> void:
 	root.call_deferred("pop_correct")
+	$"../../bubblePop".play()
 
 func pop_incorrect() -> void:
 	root.call_deferred("pop_incorrect")
+	$"../../bubblePop".play()
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _physics_process(delta: float) -> void:

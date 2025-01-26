@@ -20,6 +20,8 @@ var player_bubble = 0
 var stages_amount: int
 var jsonData = {}
 
+@export var sfx_gunshot: AudioStreamPlayer
+
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
 	speechbox.visible = false
