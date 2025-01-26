@@ -3,10 +3,14 @@
 importer="texture"
 type="CompressedTexture2D"
 <<<<<<< HEAD
+<<<<<<< HEAD
 uid="uid://crwoaeqd7xsoe"
 =======
 uid="uid://bab8gle41u536"
 >>>>>>> a2bad9f523dd69583dcb6fd109a7d8c7b8f0c016
+=======
+uid="uid://bab8gle41u536"
+>>>>>>> dff19e14021ed301fefb6dddbc2841fbe6e2d336
 path="res://.godot/imported/beniowski_dark.png-5c2b385ac972852a9f7dce6c649a6f02.ctex"
 metadata={
 "vram_texture": false
