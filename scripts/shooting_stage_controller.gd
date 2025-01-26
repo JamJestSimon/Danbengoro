@@ -121,7 +121,7 @@ func next_player_bubble():
 func end_stage() -> void:
 	stage += 1
 	if stage == stages_amount:
-		print_debug("Game finished")
+		get_tree().change_scene_to_file("res://scenes/outro.tscn")
 	else:
 		start_stage()
 
